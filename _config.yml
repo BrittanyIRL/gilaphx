@@ -28,4 +28,4 @@ github_username:  jekyll
 markdown: kramdown
 theme: minima
 
-exclude: ['vendor']
+exclude: ['vendor', 'bin']
