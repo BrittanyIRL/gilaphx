@@ -1,3 +1,22 @@
 ---
 layout: default
 ---
+
+<p><b>list the closest upcoming event first, then the most recent past event, then an archive list of everything else with a link to that specific event 'review' page. should this individual page look like the future/stories individual pages or different. Like Daniel Handler's main page???</b></p>
+
+{% for post in site.posts %}
+  {% if post.categories contains "event" %}
+  <article>
+    <div>
+      <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}"><h1 class="postTitle">{{ post.title }}</h1></a>
+      <div class="postDetails">
+        <h2 class="shortTitle">{{post.shorttitle}}//</h2>
+        <span>{{ post.category }}</span>
+        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+      </div>
+      <p class="postExcerpt">{{ post.excerpt }}</p>
+      <p class="postMore"><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}" class="link">Read More</a></p>
+    </div>
+  </article>
+    {% endif %}
+  {% endfor %}

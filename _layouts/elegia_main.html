@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<p><b>this page will scroll with a blurb from each individual story. stories_individual will be the individual post category "story". Same style as future. </b></p>
+<p><b>MODERN ENGLISH GOES HERE. Mimic's events_main</b></p>
 
 {% for post in site.posts %}
-  {% if post.categories contains "story" %}
+  {% if post.categories contains "elegia_post" %}
   <article>
     <div>
       <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}"><h1 class="postTitle">{{ post.title }}</h1></a>

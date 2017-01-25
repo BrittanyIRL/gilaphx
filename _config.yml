@@ -17,8 +17,8 @@ title: Gila
 email: deargila@gmail.com
 description: # this means to ignore newlines until "baseurl:"
   Be here.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://gilaphx.herokuapp.com/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://gilaphx.herokuapp.com" # the base hostname & protocol for your site
 twitter_username: gilaphx
 twitter_url: https://twitter.com/gilaphx
 instagram_url: https://www.instagram.com/gilaphx
