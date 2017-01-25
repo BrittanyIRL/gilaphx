@@ -1,0 +1,21 @@
+---
+# default layout
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+  </head>
+
+  <body>
+   {% include header.html %}
+
+    <div class="container" id="main-content">
+      {{ content }}
+    </div>
+    {% include javascript.html %}
+    {% include analytics.html %}
+  </body>
+</html>
