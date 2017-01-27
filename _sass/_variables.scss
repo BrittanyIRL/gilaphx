@@ -9,22 +9,18 @@
     background: linear-gradient(to bottom,  $top 40%,$middle 85%,$bottom 100%); /* W3C */
 }
 
-.anchorhover {
-    text-decoration: none;
-    text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff, 
-    0 0.05em 0 #fff, 0 -0.05em 0 #fff,
-    0.1em 0 0 #fff, -0.1em 0 0 #fff,
-    0 0.1em 0 #fff, 0 -0.1em 0 #fff;
-    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-    background-repeat: repeat-x;
-    background-position: bottom 0.05em center;
-    background-size: 100% 0.05em;
+@mixin backgroundTransparency($background-color, $opacity){
+  background-color: rgba($background-color, $opacity);
 }
-/*site variables */
 
+// colors
+$black: rgb(0, 0, 0);
+$dark_gray: rgb(33, 33, 33);
+$lighter_gray: rgb(133, 132, 132);
+$lightest_gray: rgb(207,205, 205);
+$white: rgb(255,255,255);
 
-
-/*Globals */
+/*Global Settings */
 *,
 *:before,
 *:after {
@@ -34,7 +30,6 @@
 /*root em */
 html, body {
 	height: 100%;
-  background-color: orange;
 }
 html {
   font-size: calc(1em + 1vw);
@@ -44,28 +39,4 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
-}
-
-
-/* text basics */
-
-h1{
-  font-size: 2rem;
-}
-h2{
-  font-size: 1.8rem;
-}
-
-h3{
-  font-size: 1.6rem;
-}
-h4{
-  font-size: 1.4rem;
-}
-h5{
-  font-size: 1.2rem;
-}
-
-p {
-  font-size: .8rem;
 }

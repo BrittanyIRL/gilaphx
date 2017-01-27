@@ -1,0 +1,53 @@
+// fonts
+.heading_font {
+  font-family: 'Inconsolata', monospace;
+}
+.body_font{
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+h1{
+  font-size: 2rem;
+  @extend .heading_font;
+}
+h2{
+  font-size: 1.8rem;
+  @extend .heading_font;
+}
+
+h3{
+  font-size: 1.6rem;
+  @extend .heading_font;
+}
+h4{
+  font-size: 1.4rem;
+}
+h5{
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: .8rem;
+  @extend .body_font;
+}
+
+// base link styles. nav will be done seperately. 
+a {
+  font-size: .8rem;
+  font-color: $black;
+  text-decoration: none;
+  @include backgroundTransparency($lighter_gray, 0.3);
+  line-height: 1.2rem;
+  padding: 0.15rem;
+  &:hover {
+    // darken text
+    text-decoration: none;
+    @include backgroundTransparency($lighter_gray, 0.6);
+  }
+  &:visited {
+    text-decoration: none;
+    font-color: $black;
+  }
+
+}
