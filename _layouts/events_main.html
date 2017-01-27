@@ -1,22 +1,24 @@
 ---
 layout: default
 ---
+<div class="dynamic_parent_container">
+  <div class="upcoming_event">
+    <h1>Upcoming: <span class="upcoming_event_name"> An Event!</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a href="#" alt-text="akjdaljdf" class="basic_link">Excepteur</a> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p><b>list the closest upcoming event first, then the most recent past event, then an archive list of everything else with a link to that specific event 'review' page. should this individual page look like the future/stories individual pages or different. Like Daniel Handler's main page???</b></p>
-
+    <span class="down_arrow"> down arrow! ... at the bottom of this section...</span>
+  </div>
+  <h2>Past Events</h2>
 {% for post in site.posts %}
   {% if post.categories contains "event" %}
   <article>
-    <div>
-      <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}"><h1 class="postTitle">{{ post.title }}</h1></a>
-      <div class="postDetails">
-        <h2 class="shortTitle">{{post.shorttitle}}//</h2>
-        <span>{{ post.category }}</span>
-        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+    <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
+      <div>
+        <h1 class="post_title">{{ post.title }}</h1>
+        <p class="post_subtitle">{{post.subtitle}}</p>
       </div>
-      <p class="postExcerpt">{{ post.excerpt }}</p>
-      <p class="postMore"><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}" class="link">Read More</a></p>
-    </div>
+    </a>
   </article>
     {% endif %}
   {% endfor %}
+</div>

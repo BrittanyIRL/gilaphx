@@ -7,6 +7,28 @@
 // stories, events, elegia 'landing'/'parent' pages
 .dynamic_parent_container {
 	width: 100%;
+	.upcoming_event {
+		width: 65vw;
+		height: 80vh;
+		display: block;
+		margin: 0 auto;
+		h1 {
+			font-weight: 500;
+			width: 100%;
+			display: block;
+			.upcoming_event_name {
+				font-weight: 400;
+			}
+		}
+		.down_arrow {
+			
+		}
+	}
+	h2 {
+		margin-left: 10vw;
+		padding-left: 1rem;
+		margin-bottom: 0;
+	}
 	// per post
 	article {
 		width: 100%;
