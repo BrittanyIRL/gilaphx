@@ -1,6 +1,7 @@
 ---
 layout: individual
 title:  "highlander vs. buffy"
+subtitle: "another line of text!"
 date:   2017-01-20 20:48:34 -0700
 categories: elegia_post
 ---
