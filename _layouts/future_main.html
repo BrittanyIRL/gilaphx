@@ -6,7 +6,7 @@ layout: default
 
 
 {% for post in site.posts %}
-  {% if post.categories contains "future" %}
+  {% if post.categories contains "future_post" %}
   <article>
     <div>
       <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}"><h1 class="postTitle">{{ post.title }}</h1></a>
