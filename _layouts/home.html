@@ -4,13 +4,14 @@ layout: default
 
 <p>I contain the latest material as well as a really cool intro space. I'm a little dynamic, needing one loop for the latest of each category. as well as a link to the latest zine release</p> 
 
-<ul>
-	<li><a href="{{site.url}}/">main (here)</a></li>
-	<li><a href="{{site.url}}/future">future</a></li>
-	<li><a href="{{site.url}}/stories">stories</a></li>
-	<li><a href="{{site.url}}/zine">zine</a></li>
-	<li><a href="{{site.url}}/legends">legends</a></li>
-	<li><a href="{{site.url}}/elegia">elegia</a></li>
-	<li><a href="{{site.url}}/store">store</a></li>
-	<li><a href="{{site.url}}/about">about</a></li>
-</ul>
+{% for post in site.tags.elegia limit:1 offset:0 %}
+ 	{{post.title}}
+	{{ post.category }}
+    {{ post.date | date: "%B %-d, %Y" }}
+    {{ post.excerpt }}
+    {{ site.baseurl }}
+    {{ post.url }}
+    <br>
+    __________
+    <br>
+ {% endfor %}

@@ -2,8 +2,10 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
+@import "materialize_overrides";
 @import "variables";
 @import "typography";
+@import "header";
 @import "stand_alone_pages";
 @import "landing_pages";
 @import "individual_posts";
