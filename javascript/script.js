@@ -35,6 +35,7 @@ $( document ).ready(function() {
 
   // fullpage.js for homepage //
   // ************************ //
+  // thank you: https://github.com/alvarotrigo/fullPage.js#fullpagejs //
 
   // initialize fullpage js
 	$('#fullpage_main').fullpage({
