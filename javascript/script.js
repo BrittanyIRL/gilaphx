@@ -37,17 +37,17 @@ $( document ).ready(function() {
   // ************************ //
 
   // initialize fullpage js
-	$('#fullpage').fullpage({
+	$('#fullpage_main').fullpage({
 		//Navigation
         navigation: false,
         showActiveTooltip: false,
         slidesNavigation: false,
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 900,
         autoScrolling: true,
         fitToSection: false,
-        fitToSectionDelay: 1000,
+        fitToSectionDelay: 12000,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -61,19 +61,19 @@ $( document ).ready(function() {
         dragAndMove: false,
         offsetSections: false,
         resetSliders: false,
-        fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
+        fadingEffect: true,
+        normalScrollElements: '.normal_scroll',
         scrollOverflow: true,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
-        touchSensitivity: 15,
+        touchSensitivity: 5,
         normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
 
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
-        recordHistory: false,
+        recordHistory: true,
 
         //Design
         controlArrows: false,
@@ -105,8 +105,8 @@ $( document ).ready(function() {
         }
 	});
 	
-  // check if first two home screens are visible, if so - hide nav
-
+  // control nav visibility in home page //
+  // ********************************** //
   	function showOrHideSideNav(section_index){
   		console.log(section_index);
   		if(section_index <= 2){ // starts at 1 not 0
@@ -120,10 +120,4 @@ $( document ).ready(function() {
   			$("#navigation_image").css("display", "block");
   		}
   	}
-  // if($(".intro_splash:visible")){
-	 //  	console.log("visible");
-	 //  }
-	 //  else {
-	 //  	console.log("nope");
-	 //  }
 });
