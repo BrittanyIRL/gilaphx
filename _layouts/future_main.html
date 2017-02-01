@@ -2,22 +2,8 @@
 layout: default
 ---
 
-<p>this page will scroll with a blurb from each individual futures. future_individual will be the individual post category "future". Same style as stories. </p>
-
-
-{% for post in site.posts %}
-  {% if post.categories contains "future_post" %}
-  <article>
-    <div>
-      <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}"><h1 class="postTitle">{{ post.title }}</h1></a>
-      <div class="postDetails">
-        <h2 class="shortTitle">{{post.shorttitle}}//</h2>
-        <span>{{ post.category }}</span>
-        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
-      </div>
-      <p class="postExcerpt">{{ post.excerpt }}</p>
-      <p class="postMore"><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}" class="link">Read More</a></p>
-    </div>
-  </article>
-    {% endif %}
-  {% endfor %}
+<div class="stand_alone_page">
+  <h1>I am the future.</h1>
+  <p>"John, the kind of control you're attempting is not possible. If there's one thing the history of evolution has taught us, it's that life will not be contained. Life breaks free. It expands to new territories. It crashes through barriers. Painfully, maybe even dangerously, but and...well, there it is." </p>
+  <p>Ellie listens to him, impressed. Watch her head - support her head. Grant, ignoring the others, picks up the baby dinosaur, and holds it on the palm of his hand, under the incubator's heat light. He spreads the tiny animal out on the back of his hand and delicately runs his finger over its tail, counting the vertebrae. A look of puzzled recognition crosses his face. "You're implying that a group of composed entirely of females will breed?" <span class="gila_bold">I'm simply saying that life - - finds a way.</span></p>
+</div>
