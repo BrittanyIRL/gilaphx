@@ -2,7 +2,7 @@
 layout: individual
 title:  "Best show ever"
 date:   2017-01-18 20:48:34 -0700
-categories: event
+category: event_post
 tag: event
 ---
 

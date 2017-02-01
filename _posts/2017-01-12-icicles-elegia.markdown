@@ -3,7 +3,7 @@ layout: individual
 title:  "icicles"
 subtitle: "this band rules"
 date:   2017-01-12 20:48:34 -0700
-categories: elegia_post
+category: elegia_post
 tag: elegia
 ---
 

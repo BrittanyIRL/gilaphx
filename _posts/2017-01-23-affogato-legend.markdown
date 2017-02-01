@@ -2,7 +2,7 @@
 layout: individual
 title:  "affogato"
 date:   2017-01-23 20:48:34 -0700
-categories: legend_post
+category: legend_post
 tag: legend
 ---
 

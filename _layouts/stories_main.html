@@ -3,8 +3,11 @@ layout: default
 ---
 
 <div class="dynamic_parent_container">
-{% for post in site.posts %}
-  {% if post.categories contains "story" %}
+  <div class="landing_header">
+    <h1>Stories</h1>
+    <p>"Ellie, they're absolutely - - they're moving in herds. They do move in herds!" "We were right!" "How did you do it?! How did you do this?!"</p>
+  </div>
+{% for post in site.tags.story %}
   <article>
     <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
       <div>
@@ -13,6 +16,5 @@ layout: default
       </div>
     </a>
   </article>
-    {% endif %}
   {% endfor %}
 </div>

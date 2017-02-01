@@ -9,9 +9,11 @@ layout: default
   <div class="down_arrow scrollspy"><a href="#past_events"><img src="{{site.url}}/images/downArrow.png" alt-text="down arrow to continue to past events"/></a></div>
 
   <!-- begin past events -->
-  <h2 id="past_events">Past Events</h2>
-{% for post in site.posts %}
-  {% if post.categories contains "event" %}
+  <div class="landing_header" id="past_events">
+    <h1>Past Events</h1>
+    <p>"Ellie, they're absolutely - - they're moving in herds. They do move in herds!" "We were right!" "How did you do it?! How did you do this?!"</p>
+  </div>
+{% for post in site.tags.event %}
   <article>
     <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
       <div>
@@ -20,6 +22,5 @@ layout: default
       </div>
     </a>
   </article>
-    {% endif %}
   {% endfor %}
 </div>

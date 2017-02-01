@@ -2,7 +2,7 @@
 layout: individual
 title:  "retro flannel synth"
 date:   2017-01-13 20:48:34 -0700
-categories: story
+category: story_post
 tag: story
 ---
 

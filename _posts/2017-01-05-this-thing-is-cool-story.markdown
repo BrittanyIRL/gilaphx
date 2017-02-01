@@ -2,7 +2,7 @@
 layout: individual
 title:  "This thing is cool"
 date:   2017-01-05 20:48:34 -0700
-categories: story
+category: story_post
 tag: story
 ---
 

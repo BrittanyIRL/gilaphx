@@ -2,7 +2,7 @@
 layout: individual
 title:  "Tom Cruise"
 date:   2017-01-08 20:48:34 -0700
-categories: legend_post
+category: legend_post
 tag: legend
 ---
 
