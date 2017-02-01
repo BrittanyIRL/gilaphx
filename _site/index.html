@@ -29,7 +29,8 @@
     <!-- Materialize used for the side nav quick implimentation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <!-- fullpage js -->
-    <link rel="stylesheet" href="/javascript/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="/css/jquery.fullpage.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Work+Sans" rel="stylesheet">
@@ -61,97 +62,96 @@
 <a href="#" data-activates="slide-out" class="no_styles button-collapse"><img id="navigation_image" src="http://localhost:4000/images/gila-temp.png" alt-text="site navigation"/></a>
 
     <div class="container" id="main-content">
-      <div id="homepage fullpage">
-<div class="gila_splash section" style="background-image: url('http://localhost:4000/images/bw_desert_one.jpg');">
-	<h1>Be <span class="invert_text">here.</span></h1>
-</div>
-<div class="gila_intro section">
-	<div class="flex_parent">
-		<div class="col_60">
-			<h1>Gila<span class="gila_logo_phx">phx</span></h1>
-			<div class="about">
-				<h3>“Pick apart the past, you’re not going back.”</h3>
-				<p><span class="gila_bold"> Gila.</span> Seen afar in a Baltimore dream. An eastern province bordering our fair city. A tributary cutting through its heart. A dragon roaming the desert sunset. A people whose culture outlives us all.</p>
-				<p><span class="gila_bold"> Gila.</span> Pronounced \ģe-lə\. Like so much of our modernity, an intentional misplacement. Appropriation disguised as ignorance. A wrong as a reminder. To learn and unlearn.</p>
-				<p><span class="gila_bold"> Gila.</span> Giving gifts to the nomads to preserve the culture of the native tongue. Art activism funded by vagrant minimalism. Bridges built in and out of knowledge. Eternal joy.</p>
+      <div id="fullpage">
+    <div class="section" id="gila_splash" style="background-image: url('http://localhost:4000/images/bw_desert_one.jpg');">
+		
+		<h1>Be <span class="invert_text">here.</span></h1>
+    </div>
+    <div class="section" id="gila_intro">
+    	<div class="flex_parent">
+			<div class="col_60">
+				<h1>Gila<span class="gila_logo_phx">phx</span></h1>
+				<div class="about">
+					<h3>“Pick apart the past, you’re not going back.”</h3>
+					<p><span class="gila_bold"> Gila.</span> Seen afar in a Baltimore dream. An eastern province bordering our fair city. A tributary cutting through its heart. A dragon roaming the desert sunset. A people whose culture outlives us all.</p>
+					<p><span class="gila_bold"> Gila.</span> Pronounced \ģe-lə\. Like so much of our modernity, an intentional misplacement. Appropriation disguised as ignorance. A wrong as a reminder. To learn and unlearn.</p>
+					<p><span class="gila_bold"> Gila.</span> Giving gifts to the nomads to preserve the culture of the native tongue. Art activism funded by vagrant minimalism. Bridges built in and out of knowledge. Eternal joy.</p>
+				</div>
+			</div>
+			<div class="col_40 gila_intro_menu" id="intro_menu_background" style="background-image: url('http://localhost:4000/images/bw_cactus.JPG');">
+				<ul>
+					<li><a href="http://localhost:4000/future">Future</a></li>
+	                <li><a href="http://localhost:4000/stories">Stories</a></li>
+	                <li><a href="http://localhost:4000/zine">Zine</a></li>
+	                <li><a href="http://localhost:4000/legend">Legend</a></li>
+	                <li><a href="http://localhost:4000/elegia">Elegia</a></li>
+	                <li><a href="http://localhost:4000/store">Store</a></li>
+	                <li><a href="http://localhost:4000/about">About</a></li>
+	            </ul>
 			</div>
 		</div>
-		<div class="col_40 gila_intro_menu" id="intro_menu_background" style="background-image: url('http://localhost:4000/images/bw_cactus.JPG');">
-			<ul>
-				<li><a href="http://localhost:4000/future">Future</a></li>
-                <li><a href="http://localhost:4000/stories">Stories</a></li>
-                <li><a href="http://localhost:4000/zine">Zine</a></li>
-                <li><a href="http://localhost:4000/legend">Legend</a></li>
-                <li><a href="http://localhost:4000/elegia">Elegia</a></li>
-                <li><a href="http://localhost:4000/store">Store</a></li>
-                <li><a href="http://localhost:4000/about">About</a></li>
-            </ul>
+    </div>
+    <div class="section" id="home_posts_container">
+	<!-- level one -->
+		<div class="flex_parent">
+		<!-- story -->
+			<div class="home_post col_60" id="story">
+			
+			 	<h2>retro flannel synth</h2>
+				<p><span class="post_tag">story</span>
+			    <span class="post_date">January 13, 2017</span></p>
+			    <p><p>Waistcoat affogato tote bag wolf ugh blog before they sold out keffiyeh artisan. Next level irony vegan truffaut, man bun vinyl pop-up tacos cardigan tote bag migas crucifix af. Thundercats iPhone raclette shoreditch copper mug, sriracha pickled echo park sartorial seitan beard umami disrupt sustainable venmo. Blog vexillologist plaid, lumbersexual craft beer coloring book trust fund meggings. Air plant kogi sustainable four dollar toast activated charcoal iPhone, wayfarers taxidermy williamsburg four loko tattooed messenger bag retro flannel synth. Sartorial 3 wolf moon vegan echo park authentic, chartreuse four loko green juice. Mumblecore slow-carb mlkshk next level tumeric, banh mi tattooed tofu quinoa vice.</p>
+
+</p>
+			    <p><a title="retro flannel synth" href="/story/2017/01/13/retro-flannel-synth-story.html">Read More</a></p>
+			 
+			 </div>
+		<!-- event -->
+			<div class="home_post col_40" id="event">
+			
+			 	<h2>manbun</h2>
+				<p><span class="post_tag">event</span>
+			    <span class="post_date">January 23, 2017</span></p>
+			    <p><p>Waistcoat affogato tote bag wolf ugh blog before they sold out keffiyeh artisan. Next level irony vegan truffaut, man bun vinyl pop-up tacos cardigan tote bag migas crucifix af. Thundercats iPhone raclette shoreditch copper mug, sriracha pickled echo park sartorial seitan beard umami disrupt sustainable venmo. Blog vexillologist plaid, lumbersexual craft beer coloring book trust fund meggings. Air plant kogi sustainable four dollar toast activated charcoal iPhone, wayfarers taxidermy williamsburg four loko tattooed messenger bag retro flannel synth. Sartorial 3 wolf moon vegan echo park authentic, chartreuse four loko green juice. Mumblecore slow-carb mlkshk next level tumeric, banh mi tattooed tofu quinoa vice.</p>
+
+</p>
+			    <p><a title="manbun" href="/event/2017/01/23/manbun-event.html">Read More</a></p>
+			 
+			 </div>
 		</div>
 
-	</div>
+		<!-- legend photo parallax -->
+		<img src="#" />
 
-</div>
-
-
-<!-- dynamic content begins -->
-<div class="home_posts_container section">
-	<!-- level one -->
-	<div class="flex_parent">
-	<!-- story -->
-		<div class="home_post col_60" id="story">
-		
-		 	<h2>retro flannel synth</h2>
-			<p><span class="post_tag">story</span>
-		    <span class="post_date">January 13, 2017</span></p>
-		    <p><p>Waistcoat affogato tote bag wolf ugh blog before they sold out keffiyeh artisan. Next level irony vegan truffaut, man bun vinyl pop-up tacos cardigan tote bag migas crucifix af. Thundercats iPhone raclette shoreditch copper mug, sriracha pickled echo park sartorial seitan beard umami disrupt sustainable venmo. Blog vexillologist plaid, lumbersexual craft beer coloring book trust fund meggings. Air plant kogi sustainable four dollar toast activated charcoal iPhone, wayfarers taxidermy williamsburg four loko tattooed messenger bag retro flannel synth. Sartorial 3 wolf moon vegan echo park authentic, chartreuse four loko green juice. Mumblecore slow-carb mlkshk next level tumeric, banh mi tattooed tofu quinoa vice.</p>
+		<!-- level two -->
+		<div class="flex_parent">
+		<!-- elegia -->
+			<div class="home_post col_100">
+			
+			 	<h2>highlander vs. buffy</h2>
+				<p><span class="post_tag">elegia</span>
+			    <span class="post_date">January 20, 2017</span></p>
+			    <p><p>Waistcoat affogato tote bag wolf ugh blog before they sold out keffiyeh artisan. Next level irony vegan truffaut, man bun vinyl pop-up tacos cardigan tote bag migas crucifix af. Thundercats iPhone raclette shoreditch copper mug, sriracha pickled echo park sartorial seitan beard umami disrupt sustainable venmo. Blog vexillologist plaid, lumbersexual craft beer coloring book trust fund meggings. Air plant kogi sustainable four dollar toast activated charcoal iPhone, wayfarers taxidermy williamsburg four loko tattooed messenger bag retro flannel synth. Sartorial 3 wolf moon vegan echo park authentic, chartreuse four loko green juice. Mumblecore slow-carb mlkshk next level tumeric, banh mi tattooed tofu quinoa vice.</p>
 
 </p>
-		    <p><a title="retro flannel synth" href="/story/2017/01/13/retro-flannel-synth-story.html">Read More</a></p>
-		 
-		 </div>
-	<!-- event -->
-		<div class="home_post col_40" id="event">
-		
-		 	<h2>manbun</h2>
-			<p><span class="post_tag">event</span>
-		    <span class="post_date">January 23, 2017</span></p>
-		    <p><p>Waistcoat affogato tote bag wolf ugh blog before they sold out keffiyeh artisan. Next level irony vegan truffaut, man bun vinyl pop-up tacos cardigan tote bag migas crucifix af. Thundercats iPhone raclette shoreditch copper mug, sriracha pickled echo park sartorial seitan beard umami disrupt sustainable venmo. Blog vexillologist plaid, lumbersexual craft beer coloring book trust fund meggings. Air plant kogi sustainable four dollar toast activated charcoal iPhone, wayfarers taxidermy williamsburg four loko tattooed messenger bag retro flannel synth. Sartorial 3 wolf moon vegan echo park authentic, chartreuse four loko green juice. Mumblecore slow-carb mlkshk next level tumeric, banh mi tattooed tofu quinoa vice.</p>
-
-</p>
-		    <p><a title="manbun" href="/event/2017/01/23/manbun-event.html">Read More</a></p>
-		 
-		 </div>
-	</div>
-
-	<!-- legend photo parallax -->
-	<img src="#" />
-
-	<!-- level two -->
-	<div class="flex_parent">
-	<!-- elegia -->
-		<div class="home_post col_100">
-		
-		 	<h2>highlander vs. buffy</h2>
-			<p><span class="post_tag">elegia</span>
-		    <span class="post_date">January 20, 2017</span></p>
-		    <p><p>Waistcoat affogato tote bag wolf ugh blog before they sold out keffiyeh artisan. Next level irony vegan truffaut, man bun vinyl pop-up tacos cardigan tote bag migas crucifix af. Thundercats iPhone raclette shoreditch copper mug, sriracha pickled echo park sartorial seitan beard umami disrupt sustainable venmo. Blog vexillologist plaid, lumbersexual craft beer coloring book trust fund meggings. Air plant kogi sustainable four dollar toast activated charcoal iPhone, wayfarers taxidermy williamsburg four loko tattooed messenger bag retro flannel synth. Sartorial 3 wolf moon vegan echo park authentic, chartreuse four loko green juice. Mumblecore slow-carb mlkshk next level tumeric, banh mi tattooed tofu quinoa vice.</p>
-
-</p>
-		    <p><a title="highlander vs. buffy" href="/elegia_post/2017/01/20/highlander-vs-buffy-elegia.html">Read More</a></p>
-		 
-		 </div>
-	</div>
- </div>
- <div class="home_zine_container">
- 	<h2 class="animate_title">Latest Zine</h2>
- </div>
- </div>
+			    <p><a title="highlander vs. buffy" href="/elegia_post/2017/01/20/highlander-vs-buffy-elegia.html">Read More</a></p>
+			 
+			 </div>
+		</div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div class="section" id="home_zine_container">
+	 	<h2 class="animate_title">Latest Zine</h2>
+    </div>
+</div>
+    </div>
+    
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
+<script type="text/javascript" src="http://localhost:4000/javascript/scrolloverflow.min.js"></script>
+
 <script src="http://localhost:4000/javascript/jquery.fullpage.min.js" type="text/javascript"></script>
+
 <script src="http://localhost:4000/javascript/script.js" type="text/javascript"></script>
     
   </body>

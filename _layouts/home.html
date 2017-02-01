@@ -1,82 +1,78 @@
 ---
 layout: default
 ---
-<div id="homepage fullpage">
-<div class="gila_splash section" style="background-image: url('{{site.url}}/images/bw_desert_one.jpg');">
-	<h1>Be <span class="invert_text">here.</span></h1>
-</div>
-<div class="gila_intro section">
-	<div class="flex_parent">
-		<div class="col_60">
-			<h1>Gila<span class="gila_logo_phx">phx</span></h1>
-			<div class="about">
-				<h3>“Pick apart the past, you’re not going back.”</h3>
-				<p><span class="gila_bold"> Gila.</span> Seen afar in a Baltimore dream. An eastern province bordering our fair city. A tributary cutting through its heart. A dragon roaming the desert sunset. A people whose culture outlives us all.</p>
-				<p><span class="gila_bold"> Gila.</span> Pronounced \ģe-lə\. Like so much of our modernity, an intentional misplacement. Appropriation disguised as ignorance. A wrong as a reminder. To learn and unlearn.</p>
-				<p><span class="gila_bold"> Gila.</span> Giving gifts to the nomads to preserve the culture of the native tongue. Art activism funded by vagrant minimalism. Bridges built in and out of knowledge. Eternal joy.</p>
+<div id="fullpage">
+    <div class="section" id="gila_splash" style="background-image: url('{{site.url}}/images/bw_desert_one.jpg');">
+		
+		<h1>Be <span class="invert_text">here.</span></h1>
+    </div>
+    <div class="section" id="gila_intro">
+    	<div class="flex_parent">
+			<div class="col_60">
+				<h1>Gila<span class="gila_logo_phx">phx</span></h1>
+				<div class="about">
+					<h3>“Pick apart the past, you’re not going back.”</h3>
+					<p><span class="gila_bold"> Gila.</span> Seen afar in a Baltimore dream. An eastern province bordering our fair city. A tributary cutting through its heart. A dragon roaming the desert sunset. A people whose culture outlives us all.</p>
+					<p><span class="gila_bold"> Gila.</span> Pronounced \ģe-lə\. Like so much of our modernity, an intentional misplacement. Appropriation disguised as ignorance. A wrong as a reminder. To learn and unlearn.</p>
+					<p><span class="gila_bold"> Gila.</span> Giving gifts to the nomads to preserve the culture of the native tongue. Art activism funded by vagrant minimalism. Bridges built in and out of knowledge. Eternal joy.</p>
+				</div>
+			</div>
+			<div class="col_40 gila_intro_menu" id="intro_menu_background" style="background-image: url('{{site.url}}/images/bw_cactus.JPG');">
+				<ul>
+					<li><a href="{{site.url}}/future">Future</a></li>
+	                <li><a href="{{site.url}}/stories">Stories</a></li>
+	                <li><a href="{{site.url}}/zine">Zine</a></li>
+	                <li><a href="{{site.url}}/legend">Legend</a></li>
+	                <li><a href="{{site.url}}/elegia">Elegia</a></li>
+	                <li><a href="{{site.url}}/store">Store</a></li>
+	                <li><a href="{{site.url}}/about">About</a></li>
+	            </ul>
 			</div>
 		</div>
-		<div class="col_40 gila_intro_menu" id="intro_menu_background" style="background-image: url('{{site.url}}/images/bw_cactus.JPG');">
-			<ul>
-				<li><a href="{{site.url}}/future">Future</a></li>
-                <li><a href="{{site.url}}/stories">Stories</a></li>
-                <li><a href="{{site.url}}/zine">Zine</a></li>
-                <li><a href="{{site.url}}/legend">Legend</a></li>
-                <li><a href="{{site.url}}/elegia">Elegia</a></li>
-                <li><a href="{{site.url}}/store">Store</a></li>
-                <li><a href="{{site.url}}/about">About</a></li>
-            </ul>
+    </div>
+    <div class="section" id="home_posts_container">
+	<!-- level one -->
+		<div class="flex_parent">
+		<!-- story -->
+			<div class="home_post col_60" id="story">
+			{% for post in site.tags.story limit:1 offset:0 %}
+			 	<h2>{{post.title}}</h2>
+				<p><span class="post_tag">{{ post.tag }}</span>
+			    <span class="post_date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
+			    <p>{{ post.excerpt }}</p>
+			    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
+			 {% endfor %}
+			 </div>
+		<!-- event -->
+			<div class="home_post col_40" id="event">
+			{% for post in site.tags.event limit:1 offset:0 %}
+			 	<h2>{{post.title}}</h2>
+				<p><span class="post_tag">{{ post.tag }}</span>
+			    <span class="post_date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
+			    <p>{{ post.excerpt }}</p>
+			    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
+			 {% endfor %}
+			 </div>
 		</div>
 
-	</div>
+		<!-- legend photo parallax -->
+		<img src="#" />
 
+		<!-- level two -->
+		<div class="flex_parent">
+		<!-- elegia -->
+			<div class="home_post col_100">
+			{% for post in site.tags.elegia limit:1 offset:0 %}
+			 	<h2>{{post.title}}</h2>
+				<p><span class="post_tag">{{ post.tag }}</span>
+			    <span class="post_date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
+			    <p>{{ post.excerpt }}</p>
+			    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
+			 {% endfor %}
+			 </div>
+		</div>
+    </div>
+    <div class="section" id="home_zine_container">
+	 	<h2 class="animate_title">Latest Zine</h2>
+    </div>
 </div>
-
-
-<!-- dynamic content begins -->
-<div class="home_posts_container section">
-	<!-- level one -->
-	<div class="flex_parent">
-	<!-- story -->
-		<div class="home_post col_60" id="story">
-		{% for post in site.tags.story limit:1 offset:0 %}
-		 	<h2>{{post.title}}</h2>
-			<p><span class="post_tag">{{ post.tag }}</span>
-		    <span class="post_date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
-		    <p>{{ post.excerpt }}</p>
-		    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
-		 {% endfor %}
-		 </div>
-	<!-- event -->
-		<div class="home_post col_40" id="event">
-		{% for post in site.tags.event limit:1 offset:0 %}
-		 	<h2>{{post.title}}</h2>
-			<p><span class="post_tag">{{ post.tag }}</span>
-		    <span class="post_date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
-		    <p>{{ post.excerpt }}</p>
-		    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
-		 {% endfor %}
-		 </div>
-	</div>
-
-	<!-- legend photo parallax -->
-	<img src="#" />
-
-	<!-- level two -->
-	<div class="flex_parent">
-	<!-- elegia -->
-		<div class="home_post col_100">
-		{% for post in site.tags.elegia limit:1 offset:0 %}
-		 	<h2>{{post.title}}</h2>
-			<p><span class="post_tag">{{ post.tag }}</span>
-		    <span class="post_date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
-		    <p>{{ post.excerpt }}</p>
-		    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
-		 {% endfor %}
-		 </div>
-	</div>
- </div>
- <div class="home_zine_container">
- 	<h2 class="animate_title">Latest Zine</h2>
- </div>
- </div>
