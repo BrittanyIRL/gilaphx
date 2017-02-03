@@ -7,8 +7,20 @@ tag: legend
 legend_emblem: adventure
 location: south mountain (geolocation)
 images: 
-- ben_test.jpeg
 - bowie_test.jpg
-- ben_test.jpeg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
+- bowie_test.jpg
 
 ---

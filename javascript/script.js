@@ -34,6 +34,14 @@ $( document ).ready(function() {
   $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
 
+
+  $('.masonry_grid').masonry({
+  // options
+  itemSelector: '.masonry_item',
+  columnWidth: 100,
+  percentPosition: true
+});
+
   // fullpage.js for homepage //
   // ************************ //
   // thank you: https://github.com/alvarotrigo/fullPage.js#fullpagejs //

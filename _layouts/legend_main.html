@@ -10,9 +10,12 @@ layout: default
   </div>
 
 {% for post in site.tags.legend %}
-<p> this is images : {{ post.images }} </p>
+<div class="masonry_grid">
 {% for image in post.images %}
-<img src="{{site.baseurl}}/images/{{ image}}" />
+<div class="masonry_item">
+  <img src="{{site.baseurl}}/images/{{ image }}" />
+</div>
 {% endfor %}
+</div>
 {% endfor %}
   </div>
