@@ -10,13 +10,9 @@ layout: default
   </div>
 
 {% for post in site.tags.legend %}
-  <article style="background-image: url('{{site.baseurl}}/images/{{post.bgimage}}');">
-    <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
-      <div>
-        <h1 class="post_title">{{ post.title }}</h1>
-        <p class="post_subtitle">{{post.subtitle}}</p>
-      </div>
-    </a>
-  </article>
-  {% endfor %}
+<p> this is images : {{ post.images }} </p>
+{% for image in post.images %}
+<img src="{{site.baseurl}}/images/{{ image}}" />
+{% endfor %}
+{% endfor %}
   </div>
