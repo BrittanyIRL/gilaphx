@@ -32,6 +32,7 @@ $( document ).ready(function() {
   );
   $('.collapsible').collapsible();
   $('.scrollspy').scrollSpy();
+  $('.parallax').parallax();
 
   // fullpage.js for homepage //
   // ************************ //

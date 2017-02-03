@@ -14,7 +14,7 @@ layout: default
     <p>"Ellie, they're absolutely - - they're moving in herds. They do move in herds!" "We were right!" "How did you do it?! How did you do this?!"</p>
   </div>
 {% for post in site.tags.event %}
-  <article>
+  <article style="background-image: url('{{site.baseurl}}/images/{{post.bgimage}}');">
     <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
       <div>
         <h1 class="post_title">{{ post.title }}</h1>

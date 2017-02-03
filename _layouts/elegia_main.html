@@ -8,13 +8,17 @@ layout: default
     <p>"Ellie, they're absolutely - - they're moving in herds. They do move in herds!" "We were right!" "How did you do it?! How did you do this?!"</p>
   </div>
 {% for post in site.tags.elegia %}
-  <article>
-    <a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
-      <div>
-        <h1 class="post_title">{{ post.title }}</h1>
-        <p class="post_subtitle">{{post.subtitle}}</p>
-      </div>
-    </a>
-  </article>
+<a class="parallax_link" title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
+<div class="parallax-container">
+    <div class="parallax"><img src="{{site.baseurl}}/images/{{post.bgimage}}"></div>
+   <article>
+        <div>
+          <h1 class="post_title">{{ post.title }}</h1>
+          <p class="post_subtitle">{{post.subtitle}}</p>
+          <p class="post_link">Read</p>
+        </div>
+    </article>
+</div>
+</a>
   {% endfor %}
 </div>
