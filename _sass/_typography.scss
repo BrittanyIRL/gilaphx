@@ -64,5 +64,11 @@ a,
   &.no_styles {
     background-color: transparent;
   }
+}
 
+ul {
+  li {
+    list-style-type: square;
+    list-style-position: inside;
+  }
 }
