@@ -9,13 +9,13 @@ layout: default
     <p>I wil just scroll with my full content, category "legend" - to be combined with a map at some point when everything else is ironed out</p>
   </div>
 
-{% for post in site.tags.legend %}
-<div class="masonry_grid">
-{% for image in post.images %}
-<div class="masonry_item">
-  <img src="{{site.baseurl}}/images/{{ image }}" />
-</div>
-{% endfor %}
-</div>
-{% endfor %}
+  {% for post in site.tags.legend %}
+  <div class="masonry_grid">
+  {% for image in post.images %}
+  <div class="masonry_item">
+    <img src="{{site.baseurl}}/images/{{ image }}" />
+  </div>
+  {% endfor %}
+  </div>
+  {% endfor %}
   </div>

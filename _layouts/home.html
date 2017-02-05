@@ -56,7 +56,11 @@ layout: default
 		</div>
 
 		<!-- legend photo parallax -->
-		<img src="#" />
+		{% for post in site.tags.legend limit:1 offset:0 %}
+		  {% for image in post.images limit:1%}
+			<img class="home_banner_image" src="{{site.baseurl}}/images/{{ image }}"/>
+			{% endfor %}
+		{% endfor %}
 
 		<!-- level two -->
 		<div class="flex_parent">
