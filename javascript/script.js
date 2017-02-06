@@ -6,19 +6,6 @@
 $( document ).ready(function() {
 
 
-  // control nav visibility?  //
-  // ************************ //
-
-  // $(window).scroll(function() {
-  //   if (scroll >= 50) {
-  //       $('#logo-image').attr('src', 'img/Acme_Monogram_Colour.png')
-  //       $(".important-class").addClass("padding-on-my-header");
-  //   }
-  //   if (scroll < 50) {
-  //       $(".important-class").removeClass("padding-on-my-header");
-  //       $('#logo-image').attr('src', 'img/Acme_Colour.png')
-  //   }
-  // });
 
 
   // Materialize Plugins       //
@@ -30,6 +17,10 @@ $( document ).ready(function() {
       draggable: true // Choose whether you can drag to open on touch screens
     }
   );
+  $("#slide-out").on("click", function(){
+    console.log("hover found");
+     $('.button-collapse').sideNav('show');
+   });
   $('.collapsible').collapsible();
   $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
