@@ -11,11 +11,13 @@
 		width: 65vw;
 		height: 80vh;
 		display: block;
-		margin: 0 auto;
+		margin: .5rem auto 0;
+		@extend .topBorder;
 		h1 {
 			font-weight: 500;
 			width: 100%;
 			display: block;
+			font-size: 1.6rem;
 			.upcoming_event_name {
 				font-weight: 400;
 			}
@@ -23,7 +25,9 @@
 	}
 	.down_arrow {
 		height: 10vh;
-		margin-bottom: 3rem;
+		width: 4rem;
+		margin: 0 auto 3rem;
+
 		a {
 			background-color: transparent;
 			display: flex;
@@ -34,6 +38,9 @@
 			margin: 0 auto;
 			width: 2rem;
 			height: auto;
+			// -webkit-filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.9));
+  			// filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.9));
+  			animation: pulse 3s infinite;
 		}
 	}
 	h2 {

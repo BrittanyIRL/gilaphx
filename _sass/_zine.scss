@@ -23,7 +23,7 @@
 
 .zine_landing {
 	width: 90%;
-	margin: 0 2.25rem; // margins to match everything else
+	margin: 0 2.75rem; // margins to match everything else
 	.zine_about p {
 		padding-right: 1.5rem;
 	}
@@ -54,10 +54,6 @@
 		width: 90%;
 		margin-top: .5rem;
 		padding-right: 1rem;
-		&:last-of-type {
-			// margin-right: 2.25rem;
-		}
-		// padding-left: .5rem;
 		.zine_synopsis_heading {
 			width: 100%;
 			text-align: left;

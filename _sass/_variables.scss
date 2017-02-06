@@ -13,6 +13,8 @@
   background-color: rgba($background-color, $opacity);
 }
 
+
+
 // colors
 $black: rgb(0, 0, 0);
 $dark_gray: rgb(33, 33, 33);
@@ -39,4 +41,37 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
+}
+
+
+
+// animation storage 
+
+@-webkit-keyframes pulse {
+  0% {
+   -webkit-filter: drop-shadow(3px 3px 3.5px rgba(0,0,0,0.8));
+    filter: drop-shadow(3px 3px 3.5px rgba(0,0,0,0.8));
+  }
+  50% {
+    -webkit-filter: drop-shadow(3px 3px 2.75px rgba(0,0,0,0.8));
+    filter: drop-shadow(3px 3px 2.75px rgba(0,0,0,0.8));
+  }
+  100% {
+   -webkit-filter: drop-shadow(2px 2px 2px  rgba(0,0,0,0.9));
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.9));
+  }
+}
+@keyframes pulse {
+  0% {
+   -webkit-filter: drop-shadow(3px 3px 3.5px rgba(0,0,0,0.8));
+    filter: drop-shadow(3px 3px 3.5px rgba(0,0,0,0.8));
+  }
+  50% {
+    -webkit-filter: drop-shadow(3px 3px 2.75px rgba(0,0,0,0.8));
+    filter: drop-shadow(3px 3px 2.75px rgba(0,0,0,0.8));
+  }
+  100% {
+   -webkit-filter: drop-shadow(2px 2px 2px  rgba(0,0,0,0.9));
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.9));
+  }
 }
