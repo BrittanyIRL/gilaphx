@@ -121,13 +121,13 @@ $( document ).ready(function() {
   		console.log(section_index);
   		if(section_index <= 2){ // starts at 1 not 0
   			console.log("found gila intro");
-  			$("#navigation_image").css("display", "none");
+  			$("#navigation_image").fadeOut("slow").css("display", "none");
   		} else if (section_index == 4){
   			// would be cool to make it white here...
-  			$("#navigation_image").css("display", "none");
+  			$("#navigation_image").fadeOut("slow").css("display", "none");
   		}
   		else {
-  			$("#navigation_image").css("display", "block");
+  			$("#navigation_image").fadeIn("slow").css("display", "block");
   		}
   	}
 });
