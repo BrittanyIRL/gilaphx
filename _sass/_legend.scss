@@ -1,0 +1,67 @@
+.masonry_grid {
+	// width: 100vw;
+	height: 20rem;
+	background-color: $black;
+}
+.masonry_item {
+	width: 300px; // default
+	&:nth-of-type(even){
+		width: 15.75%;
+	}
+	&:nth-of-type(odd){
+		width: 65%;	
+	}
+	&:nth-of-type(3n+2){
+		width: 32%;
+	}
+	&:nth-of-type(4n+5){
+		width: 15.75%;
+	}
+	&:nth-of-type(6n+7){
+		width: 15.75%;
+	}
+	&:first-of-type {
+		width: 100%;
+	}
+	&:last-of-type{
+		width: 30%;
+	}
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+@media (max-width: 799px){
+	.masonry_item {
+		&:nth-of-type(even){
+			width: 50%;
+			height: auto;
+		}
+		&:nth-of-type(odd){
+			width: 50%;
+			height: auto;	
+		}
+		&:nth-of-type(3n+2){
+			width: 50%;
+			height: auto;
+		}
+		&:nth-of-type(4n+5){
+			width: 50%;
+			height: auto;
+		}
+		&:nth-of-type(6n+7){
+			width: 50%;
+			height: auto;
+		}
+		&:first-of-type {
+			width: 50%;
+			height: auto;
+		}
+		&:last-of-type{
+			width: 50%;
+			height: auto;
+		}
+	}
+}

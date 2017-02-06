@@ -1,0 +1,21 @@
+.body {
+	margin-bottom: 2rem;
+}
+
+// top separating border:
+.topBorder {
+	border-top: .05rem solid $lighter_gray;
+}
+.bottomBorder {
+	border-bottom: .05rem solid $dark_gray;
+}
+
+
+// side margins are 2.25rem - any combo of padding and margin
+// whatever the page demands for structure (weirdest one is main.scss)
+
+@media (max-width: 750px){
+	.topBorder {
+		border-top: none;
+	}
+}

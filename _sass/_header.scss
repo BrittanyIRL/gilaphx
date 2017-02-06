@@ -1,0 +1,58 @@
+// materialize overrides and additions //
+
+// First, overrides 
+
+.side-nav a {
+    color: $black;
+    display: block;
+    font-size: .9rem;
+    font-weight: 400;
+    height: 1.75rem;
+    line-height: 1;
+    padding: .5rem;
+    vertical-align: middle;
+}
+
+
+#navigation_image {
+	width: 2rem;
+	height: auto;
+	position: fixed;
+	z-index: 20;
+}
+
+.side-nav {
+	padding-top: .5rem;
+	ul {
+		margin-top: .25rem;
+		a {
+		background-color: $white;
+		padding-left: .5rem;
+			&:hover {
+				background-color: $black;
+				color: $white;
+			}
+		}
+	}
+	h1 {
+		margin: 0;
+		height: 3rem;
+		background-color: $white;
+		color: $black;
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
+		a {
+			background-color: transparent;
+			font-size: 2rem;
+			color: $black;
+			&:hover {
+				background-color: transparent;
+				color: $white;
+			}
+
+		}
+	}
+}
+

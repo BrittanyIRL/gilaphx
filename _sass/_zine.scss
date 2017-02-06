@@ -1,0 +1,140 @@
+.dynamic_parent_container div.past_zine_header {
+	min-height: 4rem;
+	height: 3rem;
+	margin: 2rem 0 0;
+	padding-left: 0;
+}
+.current_zine_link {
+	padding: 0;
+	margin: 0;
+}
+.zine_landing_header {
+	@extend .landing_header;
+	padding-left: 0;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	h1, p {
+		width: 100%;
+	}
+}
+
+.zine_landing {
+	width: 90%;
+	margin: 0 2.25rem; // margins to match everything else
+	.zine_about p {
+		padding-right: 1.5rem;
+	}
+	h3 {
+		margin-bottom: .25rem;
+	}
+
+	ul {
+	  li {
+	    list-style-type: square;
+	    list-style-position: inside;
+	  }
+	}
+	.flex_parent {
+		justify-content: space-between;
+		// align-content: stretch;
+
+	}
+
+	.zine_archive_img {
+		width: 85%;
+		height: 30vh;
+		padding-top: .5rem;
+		// @extend .topBorder;
+	}
+
+	.zine_synopsis {
+		width: 90%;
+		margin-top: .5rem;
+		padding-right: 1rem;
+		&:last-of-type {
+			// margin-right: 2.25rem;
+		}
+		// padding-left: .5rem;
+		.zine_synopsis_heading {
+			width: 100%;
+			text-align: left;
+			text-transform: uppercase;
+			margin: 0;
+			padding: 0;
+		}
+		.zine_release {
+			text-transform: italic;
+			font-size: .6rem;
+			color: $lighter_gray;
+		}
+		.zine_inside {
+			padding-right: .08rem;
+			border-bottom: .05rem solid $dark_gray;
+			border-right: .05rem solid $dark_gray;
+		}
+		.download {
+			padding: auto 1rem;
+			@include backgroundTransparency($black, 0.6);
+			color: $white;
+			&:hover {
+				@include backgroundTransparency($black, 0.9);
+			}
+		}
+	}
+}
+.zine_release {
+	text-transform: italic;
+	font-size: .6rem;
+	color: $lighter_gray;
+}
+
+/// latest page
+
+.fp-slidesNav ul li a  {
+	background-color: transparent;
+}
+
+.bibliography {
+	width: 60vw;
+	margin: 0 auto;
+	a {
+		background-color: transparent;
+		&:hover {
+			text-decoration: none;
+		    text-shadow: 0.05em 0 0 #fff, 
+		    			-0.05em 0 0 #fff, 
+		    			0 0.05em 0 #fff, 
+		    			0 -0.05em 0 #fff,
+		    			0.1em 0 0 #fff, 
+		    			-0.1em 0 0 #fff,
+		    			0 0.1em 0 #fff, 
+		    			0 -0.1em 0 #fff;
+		    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+		    background-repeat: repeat-x;
+		    background-position: bottom 0.05em center;
+		    background-size: 100% 0.05em;
+		}
+	}
+}
+
+
+.latest_slide {
+	width: 100vw;
+	height: 100vw;
+	background-color: salmon;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+
+}
+
+#latest_one {
+	background-image: url('../images/ben_test.jpeg');
+
+}
+#latest_two {
+	background-image: url('../images/mcduck_test.jpg');
+}
