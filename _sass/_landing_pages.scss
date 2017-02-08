@@ -67,6 +67,10 @@
 		p {
 			// text-align: left;
 			margin: 0 2.25rem;
+			width: 100%;
+		}
+		p {
+			margin-top: -2rem; //combatting flexbox
 		}
 	}
 	// per post

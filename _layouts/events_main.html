@@ -4,14 +4,14 @@ layout: default
 <div class="dynamic_parent_container">
   <div class="upcoming_event">
     <h1>Upcoming: <span class="upcoming_event_name"> An Event!</span></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a href="#" alt-text="akjdaljdf" class="basic_link">Excepteur</a> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>In the near future, Gila will be sponsoring local arts events. At these events, you can enjoy excellent local music and visual art in exchange for a small ticket fee. 100% of these ticket sales will go towards funding a rotating collection of local arts organizations. Please learn more about how think works on our <a href="{{site.url}}/future">Future page</a>. If you are a local organizer, venue manager, or artist, and would like to get involved with future Gila events, please <a href="{{site.url}}/about#contact">contact us </a>. We can't wait to work with you.</p>
   </div>
   <div class="down_arrow scrollspy"><a href="#past_events"><img src="{{site.url}}/images/downArrow.png" alt-text="down arrow to continue to past events"/></a></div>
 
   <!-- begin past events -->
   <div class="landing_header" id="past_events">
     <h1>Past Events</h1>
-    <p>"Ellie, they're absolutely - - they're moving in herds. They do move in herds!" "We were right!" "How did you do it?! How did you do this?!"</p>
+   <!--  <p>"Ellie, they're absolutely - - they're moving in herds. They do move in herds!" "We were right!" "How did you do it?! How did you do this?!"</p> -->
   </div>
 {% for post in site.tags.event %}
   <a class="parallax_link" title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
