@@ -15,10 +15,11 @@
 
 
 #navigation_image {
-	width: 2rem;
+	width: 2.25rem;
 	height: auto;
 	position: fixed;
-	z-index: 20;
+	// z-index: 2;
+	margin: 0 0 0 .5rem;
 }
 
 .side-nav {

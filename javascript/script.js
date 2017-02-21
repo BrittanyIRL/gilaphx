@@ -14,13 +14,19 @@ $( document ).ready(function() {
   $('.button-collapse').sideNav({
       menuWidth: 135, // Default is 300
       edge: 'left', // Choose the horizontal origin
-      draggable: true // Choose whether you can drag to open on touch screens
+      draggable: true, // Choose whether you can drag to open on touch screens
+      closeOnClick: true
     }
   );
-  $("#slide-out").on("click", function(){
-    console.log("hover found");
-     $('.button-collapse').sideNav('show');
-   });
+  // allow for hover open and exit close of sidenav, extending materializecss
+  $("#navigation_image").mouseover(function(){
+    $('.button-collapse').trigger('click');
+  });
+  $("#slide-out").mouseleave(function(){
+     $('#sidenav-overlay').trigger('click');
+  });
+
+  
   $('.collapsible').collapsible();
   $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
