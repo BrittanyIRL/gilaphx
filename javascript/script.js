@@ -147,7 +147,7 @@ $('#fullpage_latest').fullpage({
         easingcss3: 'ease',
         loopBottom: false,
         loopTop: false,
-        loopHorizontal: true,
+        loopHorizontal: false,
         continuousVertical: false,
         continuousHorizontal: false,
         scrollHorizontally: false,

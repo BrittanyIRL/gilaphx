@@ -19,6 +19,9 @@
 	h1, p {
 		width: 100%;
 	}
+	p {
+		margin-top: 0 !important; // overriding fullpage js
+	}
 }
 
 .zine_landing {
