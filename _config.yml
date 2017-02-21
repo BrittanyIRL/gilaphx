@@ -36,5 +36,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - CNAME
-  - vendor
-# exclude: ['vendor', 'bin']
+  - vendor/bundle
+  - bin
+exclude: ['vendor', 'bin']
