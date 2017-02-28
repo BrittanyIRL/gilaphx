@@ -95,7 +95,7 @@
 
 		.post_title, .post_subtitle {
 			padding: .5rem;
-			margin-left: 2.25rem;
+			margin-left: 2.75rem;
 			-webkit-text-stroke: 1px $black;
 		   color: $white;
 		   text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 1);
@@ -103,7 +103,7 @@
 		}
 		.post_link {
 			margin-top: 0;
-			margin-left: 2.75rem;
+			margin-left: 3.25rem;
 			width: 2.25rem;
 			@extend .basic_link;
 			@include backgroundTransparency($white, 0.6);

@@ -21,13 +21,8 @@
 		padding-right: 2rem;
 		text-align: right;
 		margin-top: 40vh;
+		width: auto;
 	} 
-
-	.invert_text {
-		background-color: $black;
-		color: $white;
-		padding: .1rem .2rem .1rem .4rem;
-	}
 }
 
 
@@ -155,6 +150,5 @@
    -o-animation: animate_title 10s infinite;
     animation: animate_title 10s infinite;
 }
-
 
 

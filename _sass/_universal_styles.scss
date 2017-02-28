@@ -10,6 +10,12 @@
 	border-bottom: .05rem solid $dark_gray;
 }
 
+.invert_text {
+	background-color: $black;
+	color: $white;
+	padding: .1rem .2rem .1rem .4rem;
+}
+
 
 // side margins are 2.25rem - any combo of padding and margin
 // whatever the page demands for structure (weirdest one is main.scss)
