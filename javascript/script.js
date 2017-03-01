@@ -52,8 +52,8 @@ $( document ).ready(function() {
         slidesNavigation: false,
         //Scrolling
         css3: true,
-        scrollingSpeed: 900,
-        autoScrolling: false,
+        scrollingSpeed: 1200,
+        autoScrolling: true,
         fitToSection: false,
         fitToSectionDelay: 12000,
         scrollBar: false,
