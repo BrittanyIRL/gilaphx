@@ -19,12 +19,13 @@ layout: default
 			</div>
 			<div class="col_40 gila_intro_menu" id="intro_menu_background" style="background-image: url('{{site.url}}/images/bw_cactus.JPG');">
 				<ul>
-					<li><a href="{{site.url}}/future">Future</a></li>
 	                <li><a href="{{site.url}}/stories">Stories</a></li>
-	                <li><a href="{{site.url}}/zine">Zine</a></li>
-	                <li><a href="{{site.url}}/legend">Legend</a></li>
+	                <li><a href="{{site.url}}/events">Events</a></li>
 	                <li><a href="{{site.url}}/elegia">Elegia</a></li>
+	                <li><a href="{{site.url}}/legend">Legend</a></li>
+	                <li><a href="{{site.url}}/zine">Zine</a></li>
 	                <li><a href="{{site.url}}/store">Store</a></li>
+	                <li><a href="{{site.url}}/future">Future</a></li>
 	                <li><a href="{{site.url}}/about">About</a></li>
 	            </ul>
 			</div>
@@ -44,7 +45,7 @@ layout: default
 			 {% endfor %}
 			 </div>
 		<!-- event -->
-			<div class="home_post col_40" id="event">
+			<div class="home_post col_40 floats_right" id="event">
 			{% for post in site.tags.event limit:1 offset:0 %}
 			 	<h2>{{post.title}}</h2>
 				<p><span class="post_tag">{{ post.tag }}</span>

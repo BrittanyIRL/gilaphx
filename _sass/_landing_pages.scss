@@ -9,7 +9,7 @@
 	width: 100%;
 	.upcoming_event {
 		width: 65vw;
-		height: 80vh;
+		min-height: 80vh;
 		display: block;
 		margin: .5rem auto 0;
 		@extend .topBorder;
@@ -27,6 +27,7 @@
 		height: 10vh;
 		width: 4rem;
 		margin: 0 auto 3rem;
+		display: block;
 
 		a {
 			background-color: transparent;
@@ -66,7 +67,7 @@
 		h1, 
 		p {
 			// text-align: left;
-			margin: 0 2.25rem;
+			margin: 0 4.25rem;
 			width: 100%;
 		}
 		p {
@@ -95,7 +96,7 @@
 
 		.post_title, .post_subtitle {
 			padding: .5rem;
-			margin-left: 2.75rem;
+			margin-left: 4.75rem;
 			-webkit-text-stroke: 1px $black;
 		   color: $white;
 		   text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 1);
@@ -103,7 +104,7 @@
 		}
 		.post_link {
 			margin-top: 0;
-			margin-left: 3.25rem;
+			margin-left: 5.25rem;
 			width: 2.25rem;
 			@extend .basic_link;
 			@include backgroundTransparency($white, 0.6);
@@ -135,4 +136,46 @@
 .parallax-container {
 	height: 350px;
 	border-bottom: .05rem solid $black;
+}
+
+
+
+@media (max-width: 750px){
+	.dynamic_parent_container{
+		article {
+			.post_title, 
+			.post_subtitle,
+			.post_link {
+				margin-left: 4.75rem;
+			}
+		}
+		.landing_header {
+			h1, 
+			p{
+			margin-left: 3.75rem;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 550px){
+	.dynamic_parent_container{
+		article {
+			.post_title, 
+			.post_subtitle{
+				margin-left: 3.75rem;
+			}
+			.post_link {
+				margin-left: 4.5rem;
+			}
+		}
+		.landing_header {
+			h1, 
+			p{
+			margin-left: 3.25rem;
+			}
+		}
+
+	}
 }

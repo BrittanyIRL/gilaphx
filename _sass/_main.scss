@@ -48,7 +48,7 @@
 	ul {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 1.5rem auto;
+		margin: 1.5rem 1rem;
 		li {
 			height: 2rem;
 			margin: auto .5rem;
@@ -60,18 +60,20 @@
 	.about {
 		margin: 0 0 0 1rem;
 		p, h3 {
-			padding: .5rem 1.25rem;
+			padding: .5rem 3.25rem;
 		}
 		h3 {
-			margin: .5rem auto 1rem;
+			margin: .5rem auto 0;
 		}
 	}
 }
 
 
 .home_post {
-	padding: .5rem 2.25rem;
-
+	padding: .5rem .5rem .5rem 4.25rem;
+	&.floats_right {
+		padding: .5rem 1.25rem .5rem .5rem;
+	}
 	h2 {
 		margin: 0;
 		padding: 0;
@@ -149,6 +151,30 @@
    -moz-animation: animate_title 10s infinite;
    -o-animation: animate_title 10s infinite;
     animation: animate_title 10s infinite;
+}
+
+@media (max-width: 940px){
+	.gila_intro_menu {
+		ul {
+			margin-right: 1.75rem;
+		}
+	}
+}
+@media (max-width: 750px){
+	.home_post{
+		&:first-of-type,
+		&:last-of-type {
+			padding: .5rem 1.5rem .5rem 5.25rem;
+		}
+	}
+}
+@media (max-width: 550px){
+	.home_post{
+		&:first-of-type,
+		&:last-of-type {
+			padding: .5rem 1.5rem .5rem 3.25rem;
+		}
+	}
 }
 
 
