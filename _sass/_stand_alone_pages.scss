@@ -47,8 +47,21 @@
 		h1,
 		p {
 		width: 100vw;
-		padding-left: 2.25rem;
-		padding-right: 2.25rem;
+		padding-left: 4.75rem;
+		padding-right: 3.75rem;
+		}
+		p {
+			line-height: .9rem;
+		}
+	}
+}
+@media (max-width: 550px){
+	.stand_alone_page {
+		h1,
+		p {
+		width: 100vw;
+		padding-left: 4.75rem;
+		// padding-right: 4.75rem;
 		}
 		p {
 			line-height: .9rem;
