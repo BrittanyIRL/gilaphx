@@ -74,7 +74,7 @@ $( document ).ready(function() {
         scrollOverflow: true,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
-        touchSensitivity: 5,
+        touchSensitivity: 10,
         normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
 
