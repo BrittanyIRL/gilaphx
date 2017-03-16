@@ -6,6 +6,18 @@
 $( document ).ready(function() {
 
 
+  // legend captions on hover or click so everyone can see this
+  $(".legend_caption").hide(); // initially, they should all be hidden
+  $(".masonry_item").hover(function(){
+    showHideLegendCaption(this);
+  });
+  $(".masonry_item").on('click', function(){
+     showHideLegendCaption(this);
+  });
+  function showHideLegendCaption(the_legend){
+    $(".legend_caption").hide();
+    $(the_legend).find(".legend_caption").show();
+  }
 
 
 

@@ -7,6 +7,8 @@ tag: legend
 legend_emblem: adventure
 location: south mountain (geolocation)
 issue: q1_2017
+caption: somewhere in south america
+legend: adventure
 images: 
 - bowie_test.jpg
 - bowie_test.jpg
