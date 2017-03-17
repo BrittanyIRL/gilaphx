@@ -40,16 +40,16 @@
 	display: inline;
 	position: absolute;
 	width: 100%;
-	min-height: 2rem;
-	height: 2rem;
-	max-height: 4rem;
+	// min-height: 2rem;
+	// height: 2rem;
+	// max-height: 4rem;
 	margin: -3.5rem 0 0 0;
 	@include backgroundTransparency($black, 0.5);
 	color: $white;
 	font-size: .7rem;
 	line-height: .9rem;
 	text-align: left;
-	padding: 0.5rem 1rem;
+	padding: 0.01rem 0.1rem;
 	// &.music {
 	// 	@include backgroundTransparency(yellow, 0.5);
 	// }
