@@ -55,7 +55,7 @@
 		}
 	}
 	.disabled_link {
-		background-color: $white;
+		@include backgroundTransparency($white, 0.5);
 		color: $lighter_gray;
 	}
 }
