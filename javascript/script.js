@@ -5,6 +5,9 @@
 
 $( document ).ready(function() {
 
+  $(".disabled_link").prop("disabled", true);
+  $(".disabled_link").removeAttr('href');
+
 
   // legend captions on hover or click so everyone can see this
   $(".legend_caption").hide(); // initially, they should all be hidden
@@ -113,7 +116,6 @@ $( document ).ready(function() {
         onLeave: function(index, nextIndex, direction){
         },
         afterLoad: function(anchorLink, index){
-        	console.log("afterLoad ", anchorLink, index);
         	showOrHideSideNav(index);
         },
         afterRender: function(){},
@@ -128,9 +130,7 @@ $( document ).ready(function() {
   // control nav visibility in home page //
   // ********************************** //
   	function showOrHideSideNav(section_index){
-  		console.log(section_index);
   		if(section_index <= 2){ // starts at 1 not 0
-  			console.log("found gila intro");
   			$("#navigation_image").fadeOut("slow").css("display", "none");
   		} else if (section_index == 4){
   			// would be cool to make it white here...

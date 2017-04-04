@@ -33,6 +33,11 @@
 				background-color: $black;
 				color: $white;
 			}
+			&.disabled_link:hover,
+			&.disabled_link {
+				color: $lighter_gray;
+				background-color: $white;
+			}
 		}
 	}
 	h1 {
