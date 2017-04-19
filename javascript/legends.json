@@ -1,0 +1,18 @@
+{
+  "legends" : [{
+    "type": "venue",
+    "title": "valley bar",
+    "description": "hey what's up",
+    "name": "valley-bar",
+    "lat": 33.450,
+    "lng": -112.074
+   },
+   {
+      "type": "wax",
+      "title": "stinkweeds",
+      "description": "i'm groot!",
+      "name": "stinkweeds",
+      "lat": 33.510,
+      "lng": -112.075
+   }]
+}

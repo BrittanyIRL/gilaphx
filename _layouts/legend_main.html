@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
 
 <div class="dynamic_parent_container">
 
@@ -9,6 +15,13 @@ layout: default
     <p>Transmissions from the Desert Sprawl</p>
   </div>
 
+<div>
+<h2>Maps! - when this is done restrict the key</h2>
+<div id="map"></div>
+
+</div>
+
+<!-- 
   {% for post in site.tags.legend %}
   <div class="masonry_grid">
   {% for image in post.images %}
@@ -22,4 +35,60 @@ layout: default
   {% endfor %}
   </div>
   {% endfor %}
-  </div>
+  </div> -->
+
+    <script>
+    // trigger map
+    function initMap() {
+      const buildMap = (legends, icon_options) => {
+      // assemble markers 
+        for(let index = 0; index <= legends.legends.length - 1; index ++ ){
+          let this_legend = legends.legends[index];
+          let this_content = "<div class='map_window'><h6>" + this_legend.title + "</h2><p>" + this_legend.description + "</p><p><a href='{{site.baseurl}}/legends/"+this_legend.name+"'>More</a></p></div>";
+          let this_icon;
+          for(let icon in icon_options){
+            if(this_legend.type == icon){
+              this_icon = icon_options[icon];
+            }
+          }
+
+          let this_marker = new google.maps.Marker({
+            position: {lat: this_legend.lat, lng: this_legend.lng},
+            map: map,
+            title: this_legend.title,
+            icon: this_icon
+          });
+          let this_info_window = new google.maps.InfoWindow({
+            content: this_content
+          });
+           this_marker.addListener('click', function() {
+            this_info_window.open(map, this_marker);
+          });   
+        };
+      }
+      let city_center = {lat: 33.5, lng: -112.088};
+      let map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: city_center,
+        gestureHandling: 'cooperative'
+      });
+      let icon_options = {
+        "venue" : {
+          url: "{{site.baseurl}}/images/music_gila.png",
+          size: new google.maps.Size(40, 52),
+          scaledSize: new google.maps.Size(45, 45)
+        },
+        "wax" : {
+        url: "{{site.baseurl}}/images/adventure_gila.png",
+        size: new google.maps.Size(40, 52),
+        scaledSize: new google.maps.Size(45, 45)
+        }
+      }  
+
+      $.getJSON("{{site.baseurl}}/javascript/legends.json", function(legend_json) {
+          buildMap(legend_json, icon_options, map)
+      });
+    }
+  </script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key={{site.googs_key}}&callback=initMap"
+  type="text/javascript"></script>
