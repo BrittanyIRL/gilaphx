@@ -1,12 +1,6 @@
 ---
 layout: default
 ---
-<style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
 
 <div class="dynamic_parent_container">
 
@@ -15,27 +9,25 @@ layout: default
     <p>Transmissions from the Desert Sprawl</p>
   </div>
 
-<div>
-<h2>Maps! - when this is done restrict the key</h2>
-<div id="map"></div>
+  <div>
+    <div class="legend_map" id="map"></div>
+  </div>
 
-</div>
 
-<!-- 
   {% for post in site.tags.legend %}
   <div class="masonry_grid">
-  {% for image in post.images %}
-  <div class="masonry_item" id="legends">
-    <div class="legend_icon">
-      <img src="{{site.baseurl}}/images/{{post.legend}}_gila.png" />
+    {% for image in post.images %}
+    <div class="masonry_item" id="legends">
+      <div class="legend_icon">
+        <a href="{{site.baseurl}}/legends/{{post.legend_tag}}" title="More about {{post.legend_title}}"><img src="{{site.baseurl}}/images/{{post.legend}}_gila.png" /></a>
+      </div>
+      <img src="{{site.baseurl}}/images/{{ image }}" />
+      <p class="legend_caption {{post.legend}}">{{post.caption}}</p>
     </div>
-    <img src="{{site.baseurl}}/images/{{ image }}" />
-    <p class="legend_caption {{post.legend}}">{{post.caption}}</p>
-  </div>
+    {% endfor %}
+    </div>
   {% endfor %}
-  </div>
-  {% endfor %}
-  </div> -->
+</div>
 
     <script>
     // trigger map
@@ -44,7 +36,7 @@ layout: default
       // assemble markers 
         for(let index = 0; index <= legends.legends.length - 1; index ++ ){
           let this_legend = legends.legends[index];
-          let this_content = "<div class='map_window'><h6>" + this_legend.title + "</h2><p>" + this_legend.description + "</p><p><a href='{{site.baseurl}}/legends/"+this_legend.name+"'>More</a></p></div>";
+          let this_content = "<div class='map_window'><h6>" + this_legend.title + "</h2><img class='map_window_image' src='{{site.baseurl}}/images/"+this_legend.image+"' /><p>" + this_legend.description + "</p><p><a href='{{site.baseurl}}/legends/"+this_legend.name+"'>More</a></p></div>";
           let this_icon;
           for(let icon in icon_options){
             if(this_legend.type == icon){
@@ -70,7 +62,8 @@ layout: default
       let map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
         center: city_center,
-        gestureHandling: 'cooperative'
+        gestureHandling: 'cooperative',
+        scrollwheel: false
       });
       let icon_options = {
         "venue" : {

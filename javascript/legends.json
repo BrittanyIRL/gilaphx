@@ -3,6 +3,7 @@
     "type": "venue",
     "title": "valley bar",
     "description": "hey what's up",
+    "image": "music_gila.png",
     "name": "valley-bar",
     "lat": 33.450,
     "lng": -112.074
@@ -11,6 +12,7 @@
       "type": "wax",
       "title": "stinkweeds",
       "description": "i'm groot!",
+      "image": "adventure_gila.png",
       "name": "stinkweeds",
       "lat": 33.510,
       "lng": -112.075

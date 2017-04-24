@@ -1,3 +1,45 @@
+/***** Map *****/
+ #map {
+	height: 400px;
+	width: 100vw;
+
+}
+.legend_map {
+	> div {
+		-webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+	}
+}
+
+.map_window {
+	width: 15rem;
+	h6 {
+		display: inline;
+		width: 10rem;
+		height: 2rem;
+		line-height: 1.3rem;
+		font-size: 1.3rem;
+		padding: 0;
+		margin: 0 0 0 1rem;
+		vertical-align: center;
+		color: $dark_gray;
+	}
+	p{
+		color: $black;
+		margin-left: 1rem;
+	}
+}
+.map_window_image {
+	width: 2rem;
+	height: auto;
+	display: inline-block;
+	text-align: left;
+	padding: 0 0 0 .5rem;
+}
+
 .masonry_grid {
 	// width: 100vw;
 	height: 20rem;
@@ -71,6 +113,12 @@
 		max-height: 2.5rem;
 		padding-right: 0;
 		margin: 0;
+	}
+	a {
+		background-color: transparent;
+		&:hover {
+			background-color: transparent;
+		}
 	}
 
 }

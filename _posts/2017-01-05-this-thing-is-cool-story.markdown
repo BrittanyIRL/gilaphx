@@ -4,8 +4,11 @@ title:  "This thing is cool"
 date:   2017-01-05 20:48:34 -0700
 category: story_post
 tag: 
- - story
- - q1_2017
+- story
+- q1_2017
+- foo_tacos
+legend_tag: foo_tacos
+legend_title: legend title
 bgimage: mcduck_test.jpg
 issue: q1_2017
 ---
