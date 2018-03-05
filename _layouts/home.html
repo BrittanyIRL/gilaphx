@@ -8,7 +8,7 @@ layout: default
 
 <div id="fullpage_main">
     <div class="section" id="gila_splash" style="background-image: url('{{site.url}}/images/piestewa_bw.jpg');">
-		
+
 		<h1>Be <span class="invert_text">here.</span></h1>
     </div>
     <div class="section" id="gila_intro">
@@ -26,22 +26,21 @@ layout: default
 				<ul>
 	                <li><a href="{{site.url}}/about">About</a></li>
 				 	<li><a href="{{site.url}}/future">Future</a></li>
-	                <li><a href="{{site.url}}/stories" title="coming soon" class="disabled_link">Stories</a></li>
-	                <li><a href="{{site.url}}/events" title="coming soon" class="disabled_link">Events</a></li>
-	                <li><a href="{{site.url}}/elegia" title="coming soon" class="disabled_link">Elegia</a></li>
-	                <li><a href="{{site.url}}/legend" title="coming soon" class="disabled_link">Legend</a></li>
-	                <li><a href="{{site.url}}/zine" title="coming soon" class="disabled_link">Zine</a></li>
+	                <li><a href="{{site.url}}/stories" title="stories">Stories</a></li>
+	                <li><a href="{{site.url}}/events" title="events">Events</a></li>
+	                <li><a href="{{site.url}}/legend" title="legend">Legend</a></li>
+	                <li><a href="{{site.url}}/zine" title="zine">Zine</a></li>
 	                <li><a href="{{site.url}}/store" title="coming soon" class="disabled_link">Store</a></li>
-	      
+
 	            </ul>
 			</div>
 		</div>
     </div>
-  <!--   <div class="section" id="home_posts_container">
+    <div class="section" id="home_posts_container">
 	<!-- level one -->
-		<!-- <div class="flex_parent normal_scroll"> -->
+		<div class="flex_parent normal_scroll">
 		<!-- story -->
-<!-- 			<div class="home_post col_60" id="story">
+			<div class="home_post col_60" id="story">
 			{% for post in site.tags.story limit:1 offset:0 %}
 			 	<h2>{{post.title}}</h2>
 				<p><span class="post_tag">{{ post.tag }}</span>
@@ -49,9 +48,9 @@ layout: default
 			    <p>{{ post.excerpt }}</p>
 			    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
 			 {% endfor %}
-			 </div> -->
+			 </div>
 		<!-- event -->
-<!-- 			<div class="home_post col_40 floats_right" id="event">
+			<div class="home_post col_40 floats_right" id="event">
 			{% for post in site.tags.event limit:1 offset:0 %}
 			 	<h2>{{post.title}}</h2>
 				<p><span class="post_tag">{{ post.tag }}</span>
@@ -60,19 +59,19 @@ layout: default
 			    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
 			 {% endfor %}
 			 </div>
-		</div> -->
+		</div>
 
 		<!-- legend photo parallax -->
-<!-- 		{% for post in site.tags.legend limit:1 offset:0 %}
+		{% for post in site.tags.legend limit:1 offset:0 %}
 		  {% for image in post.images limit:1%}
 			<img class="home_banner_image" src="{{site.baseurl}}/images/{{ image }}"/>
 			{% endfor %}
-		{% endfor %} -->
+		{% endfor %}
 
 		<!-- level two -->
 		<!-- <div class="flex_parent"> -->
 		<!-- elegia -->
-			<!-- <div class="home_post col_100">
+			<div class="home_post col_100">
 			{% for post in site.tags.elegia limit:1 offset:0 %}
 			 	<h2>{{post.title}}</h2>
 				<p><span class="post_tag">{{ post.tag }}</span>
@@ -80,10 +79,10 @@ layout: default
 			    <p>{{ post.excerpt }}</p>
 			    <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
 			 {% endfor %}
-			 </div> -->
-		<!-- </div>
+			 </div>
+		</div>
     </div>
     <div class="section" id="home_zine_container">
 	 	<a class="no_styles" href="{{site.baseurl}}/zine"><h2 class="animate_title">Latest Zine</h2></a>
-    </div>  -->
-<!-- </div> -->
+    </div>
+</div>
