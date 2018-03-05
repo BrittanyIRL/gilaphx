@@ -3,8 +3,8 @@ layout: individual
 title:  "highlander vs. buffy"
 subtitle: "another line of text!"
 date:   2017-01-20 20:48:34 -0700
-category: elegia_post
-tag: elegia
+category: story_post
+tag: story
 bgimage: ben_test.jpeg
 issue: q1_2017
 ---
