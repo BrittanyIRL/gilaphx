@@ -3,8 +3,8 @@ layout: individual
 title:  "icicles"
 subtitle: "this band rules"
 date:   2017-01-12 20:48:34 -0700
-category: elegia_post
-tag: elegia
+category: story_post
+tag: stories
 bgimage: mcduck_test.jpg
 issue: q1_2017
 ---
