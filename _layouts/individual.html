@@ -1,15 +1,33 @@
 ---
 layout: default
 ---
-<div class="post_container flex_parent" id="{{ post.category }}">
+<div id="fullpage_story">
+<div class="section post_intro" style="background-image : url('{{site.baseurl}}/images/{{page.bgimage}}');">
+ <h3>{{page.intro}}</h3>
+ {% for intro_byline in page.intro_byline %}
+  <p class="author_quote"> - {{page.intro_byline}}</p>
+  {% endfor %}
+</div>
+
+<div class="section post_header">
+  <div class="title_container">
+    <h1 class="post_title">{{ page.title }}</h1>
+    <h2 class="subtitle">{{page.subtitle}}</h2>
+  </div>
+  <div class="author_container">
+    <p>Story : {{page.story_byline}}</p>
+    {% for photo_byline in page.photo_byline %}
+    <p>Photo : {{photo_byline}}</p>
+    {% endfor %}
+    {% for art_byline in page.art_byline %}
+    <p>Art : {{art_byline}}</p>
+    {% endfor %}
+    <p>Published : {{ page.date | date: "%B %-d, %Y" }}</p>
+  </div>
+</div>
+<div class="section post_container flex_parent" id="{{ post.category }}">
   <article class="col_60">
-  	<h1 class="post_title">{{ page.title }}</h1>
-    
-  	<div class="post_details">
-  	  <h2 class="subtitle">{{page.subtitle}}</h2>
-      <p class="post_date">{{ page.date | date: "%B %-d, %Y" }}</p>
-    </div>
     <p class="post_content">{{ content }}</p>
-    <div class="go_back"><a onclick="window.history.back()">go back</a></div>
+    <div class="go_back"><a onclick="window.history.back()">more stories</a></div>
   </article>
 </div>
