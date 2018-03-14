@@ -1,38 +1,75 @@
 // the styles of individual posts, when you click through their parent page
+.author_quote {
+	text-align: right;
+	font-style: italic;
+	font-weight: 300;
+}
+.post_intro, .post_header {
+	display: flex;
+	width: 100%;
+	margin: 0;
+}
+.post_intro {
+	background-color: salmon;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 2.5rem;
+	background-repeat: no-repeat;
+	background-size:cover;
+	h3, p {
+		color: $white;
+		mix-blend-mode: hard-light;
+	}
+
+}
+.post_header {
+	padding: 2rem 2.5rem;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	.author_container {
+		& > p {
+			line-height: .5;
+			font-size: .6rem;
+			&:first-of-type {
+				padding-top: .5rem;
+				min-width: 50%;
+				max-width: 15rem;
+			}
+		}
+	}
+	.subtitle {
+		margin: .8rem 0 2rem;
+		font-size: 1.4rem;
+	}
+	.post_title {
+		line-height: 1.9rem;
+		margin-bottom: .7rem;
+	}
+}
+
 .post_container {
 	align-items: center;
 	justify-content:center;
-	padding: 1rem 2.5rem;
+	padding: 2rem 2.5rem;
+
 	article {
-		// width: 100%;
+		width: 100%;
 		margin-bottom: 3rem;
 		padding-bottom: 1rem;
 		@extend .bottomBorder;
-		.post_title {
-			line-height: 1.9rem;
-			margin-bottom: .7rem;
-		}
-		.post_details {
-			.subtitle {
-				font-size: 1.4rem;
-				line-height: 1.2rem;
-				margin: .5rem auto;
-			}
-			.post_date {
-				width: 100%;
-				font-size: .7rem;
-				padding: 0 auto 1.5rem;
-				margin: 0;
 
-			}
-		}
 		.post_content {
-			border-top: .1rem solid $lighter_gray;
 			display: flex;
 			align-items: center;
 		}
 		.post_image {
 			max-width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+		.double_post_image {
+			width: 45%;
 			height: auto;
 			object-fit: contain;
 		}
@@ -44,12 +81,19 @@
 }
 
 @media (max-width: 750px){
-	.post_container {
+	.post_container,
+	.post_header,
+	.post_intro {
 		padding-left: 6rem;
+	}
+	.poster_container article .double_post_image {
+		max-width: 100%;
 	}
 }
 @media (max-width: 550px){
-	.post_container {
+	.post_container,
+	.post_header,
+	.post_intro {
 		padding-left: 4rem;
 	}
 }

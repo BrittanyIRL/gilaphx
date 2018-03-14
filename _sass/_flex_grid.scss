@@ -19,7 +19,6 @@
 
 .col_40 {
 	width: 40vw;
-	display: block;
 }
 
 .col_50 {
@@ -48,7 +47,7 @@
 }
 
 
-// take care for smaller sizes.... 
+// take care for smaller sizes....
 
 @media (max-width: 750px){
 	.col_10,
@@ -65,6 +64,3 @@
 	}
 
 }
-
-
-

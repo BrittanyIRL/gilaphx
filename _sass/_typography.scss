@@ -6,7 +6,7 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-.gila_bold_italics { 
+.gila_bold_italics {
     font-weight: 600;
     font-style: italic;
   }
@@ -37,13 +37,13 @@ h5{
   font-size: 1.2rem;
 }
 
-p {
+p, ul > li, ol > li {
   font-size: .8rem;
   @extend .body_font;
 }
 
-// base link styles. nav will be done seperately. 
-a, 
+// base link styles. nav will be done seperately.
+a,
 .basic_link {
   font-size: .8rem;
   color: $black;

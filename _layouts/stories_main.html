@@ -1,24 +1,33 @@
 ---
 layout: default
 ---
-
-<div class="dynamic_parent_container">
-  <div class="landing_header">
-    <h1>Stories</h1>
-    <p>The Beating Heart of the City</p>
-  </div>
+<div id="fullpage_archive_stories">
 {% for post in site.tags.story %}
-  <a class="parallax_link" title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">
-    <div class="parallax-container">
-        <div class="parallax"><img src="{{site.baseurl}}/images/{{post.bgimage}}"></div>
-       <article>
-            <div>
-              <h1 class="post_title">{{ post.title }}</h1>
-              <p class="post_subtitle">{{post.subtitle}}</p>
-              <p class="post_link">Read</p>
-            </div>
-        </article>
+  <div class="section">
+    <div class="flex_parent story_container">
+    <div class="col_50 image_container">
+      <img src="{{site.baseurl}}/images/{{post.bgimage}}">
     </div>
-  </a>
+    <div class="col_50">
+      <div class="about_container">
+        <div class="landing_details">
+          <div>
+            <h2>{{ post.title }}</h2>
+            <h3>{{post.subtitle}}</h3>
+            <p><a title="{{post.title}}" href="{{ site.baseurl }}{{ post.url }}">More</a></p>
+          </div>
+        </div>
+        {% for landing_blurb in post.landing_blurb %}
+        <div class="landing_blurb">
+          <div>
+            <p>{{landing_blurb}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  </div>
+
   {% endfor %}
 </div>
