@@ -1,5 +1,5 @@
 // fullpage js is a diva that wants to be the only class at the container level
-#home_posts_container, 
+#home_posts_container,
 #gila_intro,
 #gila_splash {
 	width: 100%;
@@ -22,11 +22,12 @@
 		text-align: center;
 		margin-top: 40vh;
 		width: auto;
-	} 
+		color: $white;
+	}
 }
 
 
-//Intro section 
+//Intro section
 
 #gila_intro h1 {
 	margin: 2rem auto 0 1rem;
@@ -72,62 +73,12 @@
 		}
 		p {
 			font-size: 0.7rem;
+			line-height: 1.2;
 		}
 	}
 }
 
 
-.home_post {
-	padding: .5rem .5rem .5rem 4.25rem;
-	&.floats_right {
-		padding: .5rem 1.25rem .5rem .5rem;
-	}
-	h2 {
-		margin: 0;
-		padding: 0;
-	}
-
-	p:first-of-type {
-		margin: 0;
-	}
-	span {
-		font-size: .6rem;
-		text-transform: capitalize;
-		color: $lighter_gray;
-	}
-	span.post_tag{
-		&:after {
-		  padding-left: .5rem;
-		  content: "|";
-		}
-	}
-	span.post_date {
-		padding-left: .4rem;
-	}
-}
-
-
-.home_banner_image {
-	width: 100vw;
-	height: 50vh;
-	object-fit: cover;
-}
-
-#home_zine_container {
-	background-color: $black;
-	color: white;
-	height: 50vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	a,
-	h2 {
-		text-align: center;
-		margin: 0 auto;
-		vertical-align: middle;
-	}
-}
 
 
 @keyframes animate_title {
@@ -168,21 +119,3 @@
 		}
 	}
 }
-@media (max-width: 750px){
-	.home_post{
-		&:first-of-type,
-		&:last-of-type {
-			padding: .5rem 1.5rem .5rem 5.25rem;
-		}
-	}
-}
-@media (max-width: 550px){
-	.home_post{
-		&:first-of-type,
-		&:last-of-type {
-			padding: .5rem 1.5rem .5rem 3.25rem;
-		}
-	}
-}
-
-
