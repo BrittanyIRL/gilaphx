@@ -1,0 +1,59 @@
+@keyframes animate_opacity {
+  0%  { opacity: 1.0; }
+  40% { opacity: .6; }
+  80% { opacity: .9; }
+  100% {opacity: 1.0; }
+}
+@-o-keyframes animate_opacity{
+  0%  { opacity: 1.0; }
+  40% { opacity: .6; }
+  80% { opacity: .9; }
+  100% {opacity: 1.0; }
+}
+@-moz-keyframes animate_opacity{
+   0%  { opacity: 1.0; }
+  40% { opacity: .6; }
+  80% { opacity: .9; }
+  100% {opacity: 1.0; }
+}
+@-webkit-keyframes animate_opacity{
+   0%  { opacity: 1.0; }
+  40% { opacity: .6; }
+  80% { opacity: .9; }
+  100% {opacity: 1.0; }
+}
+
+.animate_opacity {
+  -webkit-animation: animate_opacity 10s infinite;
+  -moz-animation: animate_opacity 10s infinite;
+  -o-animation: animate_opacity 10s infinite;
+   animation: animate_opacity 10s infinite;
+}
+
+@keyframes animate_pulse {
+  0%  { width : 1em; }
+  50% { width : 1.05em; }
+  100% { width : 1em; }
+}
+@-o-keyframes animate_pulse{
+  0%  { width : 1em; }
+  50% { width : 1.05em; }
+  100% { width : 1em; }
+}
+@-moz-keyframes animate_pulse{
+  0%  { width : 1em; }
+  50% { width : 1.05em; }
+  100% { width : 1em; }
+}
+@-webkit-keyframes animate_pulse{
+  0%  { width : 1em; }
+  50% { width : 1.05em; }
+  100% { width : 1em; }
+}
+
+.animate_pulse {
+  -webkit-animation: animate_pulse 15s infinite;
+  -moz-animation: animate_pulse 15s infinite;
+  -o-animation: animate_pulse 15s infinite;
+   animation: animate_pulse 15s infinite;
+}
