@@ -1,6 +1,6 @@
 // materialize overrides and additions //
 
-// First, overrides 
+// First, overrides
 
 .side-nav a {
     color: $black;
@@ -15,14 +15,18 @@
 
 
 #navigation_image {
-	width: 2.5rem;
+	width: 2.75rem;
+  font-size: 2.75rem; //set so we can manipulate pulse
 	height: auto;
 	position: fixed;
 	z-index: 30; // here so that nav opens on zine
 	margin: .5rem 0 0 1rem;
+  // @extend .animate_pulse;
 }
 
 .side-nav {
+  min-width: 15vw !important;
+  max-width: 50vw !important;
 	padding-top: .5rem;
 	ul {
 		margin-top: .25rem;
@@ -67,4 +71,3 @@
 		margin-left: .5rem;
 	}
 }
-
