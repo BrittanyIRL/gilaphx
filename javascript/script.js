@@ -126,6 +126,7 @@ $( document ).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
         }
 	});
+
   $('#fullpage_archive').fullpage({
     //Navigation
         navigation: false,
