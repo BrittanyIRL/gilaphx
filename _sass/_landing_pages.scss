@@ -1,55 +1,70 @@
-// the landing pages of Gila 
-// stories, events, and elegia are the same style 
+// the landing pages of Gila
+// stories, events, and elegia are the same style
 // future/about are static, and same
 // zine is it's own thing but a bit like stories/events/elegia
-// legend is photo based 
+// legend is photo based
+#fullpage_archive {
+	.section {
+		padding-bottom: 0;
+	}
+}
 
+
+.story_container {
+	width: 100vw;
+	min-height: 100vh;
+	overflow:scroll;
+}
+
+
+.image_container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.about_container {
+	margin: auto 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items: flex-end;
+	justify-content: center;
+	height: 100%;
+
+	h2 {
+		margin: 0;
+		padding: 0;
+	}
+	.landing_details,
+	.landing_blurb {
+		width: 100%;
+	}
+	.landing_details {
+		text-align: left;
+		h2, h3 {
+			margin: 0;
+			padding: 0;
+		}
+		& > div {
+			margin-top: 15vh;
+		}
+	}
+	.landing_blurb {
+		& > div {
+			width: 70%;
+			text-align: right;
+			background-color: black;
+			color: white;
+			padding: .15rem .5rem;
+			margin-bottom: 2rem;
+			float: right;
+		}
+	}
+}
 // stories, events, elegia 'landing'/'parent' pages
 .dynamic_parent_container {
 	width: 100%;
-	.upcoming_event {
-		width: 65vw;
-		min-height: 80vh;
-		display: block;
-		margin: .5rem auto 0;
-		@extend .topBorder;
-		h1 {
-			font-weight: 500;
-			width: 100%;
-			display: block;
-			font-size: 1.6rem;
-			.upcoming_event_name {
-				font-weight: 400;
-			}
-		}
-	}
-	.down_arrow {
-		height: 10vh;
-		width: 4rem;
-		margin: 0 auto 3rem;
-		display: block;
-
-		a {
-			background-color: transparent;
-			display: flex;
-			align-items: flex-end;
-			justify-content: center;
-		}
-		img {
-			margin: 0 auto;
-			width: 2rem;
-			height: auto;
-			// -webkit-filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.9));
-  			// filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.9));
-  			animation: pulse 3s infinite;
-		}
-	}
-	h2 {
-		margin-left: 10vw;
-		padding-left: 1rem;
-		margin-bottom: 0;
-	}
-
 	.landing_header {
 		width: 100vw;
 		min-height: 10rem;
@@ -64,7 +79,7 @@
 		padding: 1rem;
 		border-bottom: .05rem solid $white;
 
-		h1, 
+		h1,
 		p {
 			// text-align: left;
 			margin: 0 4.25rem;
@@ -74,88 +89,22 @@
 			margin-top: -2rem; //combatting flexbox
 		}
 	}
-	// per post
-	.divider {
-		height: .15rem;
-		width: 100vw;
-		background-color: $black;
-	}
-	article {
-		width: 100%;
-		height: 40vh;
-		// display: block;
-		// border-top: .10rem solid $white;
-		// background-color: $lighter_gray;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
 
-		.post_title, .post_subtitle {
-			padding: .5rem;
-			margin-left: 4.75rem;
-			-webkit-text-stroke: 1px $black;
-		   color: $white;
-		   text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 1);
-		    mix-blend-mode: luminosity;
-		}
-		.post_link {
-			margin-top: 0;
-			margin-left: 5.25rem;
-			width: 2.25rem;
-			@extend .basic_link;
-			@include backgroundTransparency($white, 0.6);
-			&:hover {
-				@include backgroundTransparency($white, 0.8);
-			}
-		}
-		.post_subtitle {
-			font-size: 1.2rem;
-			margin-top: 0;
-			margin-bottom: .8rem;
-		}
-	}
+
 }
 
-.parallax_link {
-	padding: 0;
-	margin: 0;
-	background-color: transparent;
-}
-// control the parallax features, if that's not obvious.
-// the parallax container needs to be in pixels. 
-.parallax {
-	img {
-		filter: grayscale(100%);
-		opacity: .75;
-	}
-}
-.parallax-container {
-	height: 350px;
-	border-bottom: .05rem solid $black;
-}
+
 
 
 
 @media (max-width: 750px){
 	.dynamic_parent_container{
-		article {
-			.post_title, 
-			.post_subtitle,
-			.post_link {
-				margin-left: 4.75rem;
-			}
-		}
 		.landing_header {
-			h1, 
+			h1,
 			p{
 			margin-left: 3.75rem;
 			}
 		}
-
 	}
 }
 
@@ -164,21 +113,65 @@
 		padding-left: 1.25rem;
 	}
 	.dynamic_parent_container{
-		article {
-			.post_title, 
-			.post_subtitle{
-				margin-left: 3.75rem;
-			}
-			.post_link {
-				margin-left: 4.5rem;
-			}
-		}
 		.landing_header {
-			h1, 
+			h1,
 			p{
 			margin-left: 3.25rem;
 			}
 		}
 
+	}
+}
+
+@media (max-width: 750px){
+
+	.story_container {
+		& > div {
+			width: 100vw;
+		}
+	}
+	.image_container {
+		height: 40vh;
+	}
+	.about_container {
+		margin-top: .25rem;
+	}
+	.about_container .landing_details {
+		& > div {
+			margin-top: 0;
+		}
+	}
+	.about_container .landing_blurb {
+		& > div {
+			width: 100%;
+			float: none;
+			text-align: left;
+			background-color: $white;
+			color: $black;
+			border: .08rem solid $black;
+
+		}
+	}
+	.landing_header {
+		h1,
+		p {
+		padding-left: 4.75rem;
+		padding-right: 3.75rem;
+		}
+		p {
+			line-height: .9rem;
+		}
+	}
+}
+@media (max-width: 550px){
+	.landing_header {
+		h1,
+		p {
+		padding-left: 4.75rem;
+		// padding-right: 4.75rem;
+		}
+		p {
+			line-height: .9rem;
+		}
 	}
 }

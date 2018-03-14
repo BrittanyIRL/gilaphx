@@ -3,6 +3,7 @@ layout: individual
 title:  "highlander vs. buffy"
 subtitle: "another line of text!"
 intro : "How often have I said to you that when you have eliminated the impossible, whatever remains, however improbable, must be the truth?"
+landing_blurb : "Here we expose something that will make people want to click on this and read more. Like the cover section of a main magazine feature."
 intro_byline: "Sherlock Holmes"
 date:   2017-01-20 20:48:34 -0700
 story_byline: Frodo
