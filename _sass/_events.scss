@@ -1,21 +1,29 @@
 #too_hot_for_coffee {
   height: 100vh;
+  width: 100%;
   background-color: salmon;
   display: flex;
-  align-items: flex-end;
-  // justify-content: center;
+  // flex-direction: row-reverse;
+  align-items: flex-end; // content is in bottom corner
+  align-content: center; // items gather in center;
+  justify-content: flex-end; // content is on the left
   .event_container {
     width: 50vw;
     height: 100%;
-    float: right;
+    // float: right;
     flex-wrap: wrap;
     align-items: flex-end;
     align-content: center;
+    justify-content: flex-end;
+    margin: auto;
+    margin-right: 15vh;
   }
   .event_image {
     width: 30%;
+    margin-top: 10vh;
     img {
       width: 100%;
+      max-height: 200px;
       object-fit: contain;
     }
   }

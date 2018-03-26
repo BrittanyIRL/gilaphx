@@ -23,6 +23,13 @@
 		margin-top: 40vh;
 		width: auto;
 		color: $white;
+		.invert_text {
+			font-size: 2rem;
+			&:hover {
+				font-style: italic;
+			}
+
+		}
 	}
 }
 

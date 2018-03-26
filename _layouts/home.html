@@ -1,13 +1,14 @@
 ---
 layout: default
+page: name
 ---
 
 <div id="fullpage_main">
     <div class="section" id="gila_splash" style="background-image: url('{{site.url}}/images/gila_crowd_floor.gif');">
 
-		<h1>Be <span class="invert_text">here.</span></h1>
+		<h1>Be <a class="no_styles" href="#intro"><span class="invert_text">here.</span></a></h1>
     </div>
-    <div class="section" id="gila_intro">
+    <div class="section" id="gila_intro" data-anchor="intro">
     	<div class="flex_parent">
   			<div class="col_60">
   				<h1>Gila<span class="gila_logo_phx">phx</span></h1>
@@ -20,13 +21,13 @@ layout: default
   			</div>
   			<div class="col_40 gila_intro_menu" id="intro_menu_background" style="background-image: url('{{site.url}}/images/parking_bw.jpg');">
   				<ul>
-            <li><a href="{{site.url}}/events" title="events">Events</a></li>
-            <li><a href="{{site.url}}/stories" title="stories">Stories</a></li>
-            <!-- <li><a href="{{site.url}}/zine" title="zine">Zine</a></li> -->
-            <li><a href="{{site.url}}/about">About</a></li>
-   	        <!-- <li><a href="{{site.url}}/future">Future</a></li> -->
-            <!-- <li><a href="{{site.url}}/legend" title="legend">Legend</a></li> -->
-            <!-- <li><a href="{{site.url}}/store" title="coming soon" class="disabled_link">Store</a></li> -->
+            <li><a class="invert_basic_link" href="{{site.url}}/events" title="events">Events</a></li>
+            <li><a class="invert_basic_link" href="{{site.url}}/stories" title="stories">Stories</a></li>
+            <!-- <li><a class="invert_basic_link" href="{{site.url}}/zine" title="zine">Zine</a></li> -->
+            <li><a class="invert_basic_link" href="{{site.url}}/about">About</a></li>
+   	        <!-- <li><a class="invert_basic_link" href="{{site.url}}/future">Future</a></li> -->
+            <!-- <li><a class="invert_basic_link" href="{{site.url}}/legend" title="legend">Legend</a></li> -->
+            <!-- <li><a class="invert_basic_link" href="{{site.url}}/store" title="coming soon" class="disabled_link">Store</a></li> -->
           </ul>
   			</div>
 		    </div>

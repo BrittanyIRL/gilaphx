@@ -69,6 +69,11 @@ a,
   }
 }
 
+.invert_basic_link {
+  @extend .basic_link;
+  background-color: $white;
+}
+
 ul.square_list {
   li {
     list-style-type: square;
