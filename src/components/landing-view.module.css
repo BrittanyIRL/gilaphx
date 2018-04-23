@@ -1,0 +1,29 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  color: white;
+  background-image: url('./landing-images/gila_landing_still.jpg');
+	background-repeat: no-repeat;
+  background-size: cover;
+	background-position: top center;
+  width: 100%;
+  height: 100%;
+}
+
+/** only comes into play when screen is over 500px wide, so that we can use still images for smaller devices **/
+.large {
+  background-image: url('./landing-images/gila_landing_compressed.gif');
+  background-position: center center;
+}
+
+.invert_text {
+  background-color : white;
+  color: black;
+}
+.invert_text:hover {
+  font-style: italic;
+  background-color: #E8E8E8;
+  color : black;
+}

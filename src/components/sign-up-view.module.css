@@ -1,0 +1,8 @@
+.section {
+  display: block;
+  width: 100vw;
+  min-height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  list-style: none;
+}

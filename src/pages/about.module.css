@@ -1,0 +1,67 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.bodyText {
+  width: 100%;
+  min-width: 50vw;
+  max-width: 80vw;
+  margin: 0;
+}
+.bodyText p {
+  margin: 0;
+  padding-top: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+  padding-bottom: 1em;
+}
+
+.bodyImage {
+  object-fit: cover;
+  object-position: center;
+  margin: 1rem 0 0;
+}
+
+.caption {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  padding-top: .25rem;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sectionWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.invert_text {
+  margin: 0;
+  font-size: 1rem;
+  padding: .1em .25em;
+  color: white;
+  background-color: rgba(33, 33, 33, 0.9);
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+}
+
+.invert_text a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.invert_text:hover {
+  cursor: pointer;
+  background-color: rgba(133, 132, 132, 0.9);
+}

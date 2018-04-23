@@ -1,0 +1,31 @@
+/* container for home page  */
+.section {
+  display: block;
+  width: 100vw;
+  min-height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  list-style: none;
+}
+
+/* navigation for home is separate from rest of site*/
+.invert_text {
+  margin: 0 0 0 .6em;
+  font-size: 2rem;
+  padding: .1em .25em;
+  color: white;
+  background-color: rgba(33, 33, 33, 0.9);
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+}
+
+.invert_text a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.invert_text:hover {
+  cursor: pointer;
+  background-color: rgba(133, 132, 132, 0.9);
+}
