@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Gila PHX`
   },
-  pathPrefix: '/gilaphx',
+  // pathPrefix: '/gilaphx',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',

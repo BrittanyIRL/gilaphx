@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 import Link from 'gatsby-link';
 // fullpage
-import {SectionsContainer, Section, Footer} from 'react-fullpage';
 
 import FooterView from '../components/footer';
 import PageHeader from '../components/page-header';
-import Socials from '../components/socials';
 
 import mainStyles from './about.module.css';
+
+let fullpage_options = {
+   arrowNavigation : true,
+   delay : 500,
+   scrollingSpeed : 400,
+   sectionClassName : 'section',
+   scrollBar : true,
+   navigation : true,
+   verticalAlign : false,
+   recordHistory : false
+};
 
 class AboutPage extends Component {
   constructor(props) {
@@ -17,16 +26,6 @@ class AboutPage extends Component {
     };
   };
 
-  options = {
-     arrowNavigation : true,
-     delay : 500,
-     scrollingSpeed : 400,
-     sectionClassName : 'section',
-     scrollBar : true,
-     navigation : true,
-     verticalAlign : false,
-     recordHistory : false
-  };
 
   twitterWindow() {
     // add in a "leaving site" screen before redirecting location
@@ -39,11 +38,9 @@ class AboutPage extends Component {
   render() {
     return (
       <div>
-        <Footer>
           <FooterView year={this.state.year} />
-        </Footer>
-        <SectionsContainer {...this.options}>
-          <Section>
+
+
             <div className={mainStyles.sectionWrapper}>
               <PageHeader header="What is Gila?" />
               <div className={mainStyles.bodyText}>
@@ -54,9 +51,7 @@ class AboutPage extends Component {
               <span className={mainStyles.invert_text}><Link to="/">Back Home</Link></span>
             </div>
 
-          </Section>
 
-        </SectionsContainer>
       </div>
     )
   };

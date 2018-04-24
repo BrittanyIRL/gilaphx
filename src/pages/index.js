@@ -9,6 +9,16 @@ import LandingView from '../components/landing-view';
 import IntroView from '../components/intro-view';
 import FooterView from '../components/footer';
 
+let fullpage_options = {
+  arrowNavigation : true,
+  delay : 500,
+  scrollingSpeed : 400,
+ sectionClassName : 'section',
+ scrollBar : true,
+ navigation : true,
+ verticalAlign : false,
+ recordHistory : false
+};
 
 class RootIndex extends React.Component {
   constructor(props) {
@@ -16,7 +26,6 @@ class RootIndex extends React.Component {
     this.state = {
       year : new Date().getFullYear()
     };
-
   };
 
   hereRedirect() {
@@ -26,16 +35,6 @@ class RootIndex extends React.Component {
     }
   };
 
-  options = {
-    arrowNavigation : true,
-    delay : 500,
-    scrollingSpeed : 400,
-   sectionClassName : 'section',
-   scrollBar : true,
-   navigation : true,
-   verticalAlign : false,
-   recordHistory : false
-  };
 
   render() {
     return (
@@ -43,7 +42,7 @@ class RootIndex extends React.Component {
         <Footer>
           <FooterView year={this.state.year} />
         </Footer>
-        <SectionsContainer {...this.options}>
+        <SectionsContainer {...fullpage_options}>
           <Section><LandingView onClick={this.hereRedirect} /></Section>
           <Section>
             <IntroView />
