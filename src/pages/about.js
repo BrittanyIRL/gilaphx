@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import FooterView from '../components/footer';
 import PageHeader from '../components/page-header';
 
-import mainStyles from './about.module.css';
+import mainStyles from '../components/about/about.module.css';
 
 let fullpage_options = {
    arrowNavigation : true,
@@ -38,8 +38,6 @@ class AboutPage extends Component {
   render() {
     return (
       <div>
-          <FooterView year={this.state.year} />
-
 
             <div className={mainStyles.sectionWrapper}>
               <PageHeader header="What is Gila?" />
@@ -51,6 +49,7 @@ class AboutPage extends Component {
               <span className={mainStyles.invert_text}><Link to="/">Back Home</Link></span>
             </div>
 
+            <FooterView year={this.state.year} />
 
       </div>
     )
