@@ -5,8 +5,8 @@
       "component---src-pages-stories-js-1249f3629c047aee019c.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-34492acd7ce2a46144fe.js",
-      "component---src-pages-index-js-34492acd7ce2a46144fe.js.map"
+      "component---src-pages-index-js-ce28c5ffa7d994ade631.js",
+      "component---src-pages-index-js-ce28c5ffa7d994ade631.js.map"
     ],
     "path---stories-hello-world": [
       "path---stories-hello-world-2a54d42b96d66c849ac7.js",
@@ -45,9 +45,9 @@
       "path---stories-static-sites-are-great-a886af0c49de9d111993.js.map"
     ],
     "commons": [
-      "commons-5e6deaf47d2c460fb4a0.js",
+      "commons-0d02b2a49a99c4bca4dc.js",
       "build-js-styles.css",
-      "commons-5e6deaf47d2c460fb4a0.js.map",
+      "commons-0d02b2a49a99c4bca4dc.js.map",
       "build-js-styles.css.map"
     ],
     "path---stories": [
