@@ -5,8 +5,8 @@ import Helmet from 'react-helmet'
 // fullpage
 import {SectionsContainer, Section, Footer} from 'react-fullpage';
 // page views
-import LandingView from '../components/landing-view';
-import IntroView from '../components/intro-view';
+import LandingView from '../components/landing/landing-view';
+import IntroView from '../components/landing/intro-view';
 import FooterView from '../components/footer';
 
 let fullpage_options = {
@@ -39,6 +39,11 @@ class RootIndex extends React.Component {
   render() {
     return (
       <div>
+      <Helmet defaultTitle={`Gila PHX`}>
+        <meta name="og:type" content="website" />
+        <meta name="og:site_name" content="Gila PHX" />
+        <html lang="en" />
+      </Helmet>
         <Footer>
           <FooterView year={this.state.year} />
         </Footer>

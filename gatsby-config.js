@@ -2,7 +2,8 @@ const contentfulConfig = require('./.contentful')
 
 module.exports = {
   siteMetadata: {
-    title: `Gila PHX`
+    title: `Gila PHX`,
+    siteName: `Gila PHX`
   },
   // pathPrefix: '/gilaphx',
   plugins: [
