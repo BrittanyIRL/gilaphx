@@ -6,6 +6,7 @@ import Media from 'react-media';
 import introStyles from './intro.module.css';
 import introViewStyles from './intro-view.module.css';
 
+import PageLink from '../UI/PageLink/PageLink';
 
 // <li className={introStyles.invert_text}><Link to="/events">events</Link></li>
 // <li className={introStyles.invert_text}><Link to="/stories">stories</Link></li>
@@ -25,7 +26,9 @@ export default () => (
         </div>
         <div className={ [introViewStyles.introNav, introViewStyles.large].join(' ') }>
           <ul>
-            <li className={introStyles.invert_text}><Link to="/about">about</Link></li>
+            <li>
+              <PageLink to="/about" />
+            </li>
           </ul>
         </div>
       </div>
@@ -43,7 +46,7 @@ export default () => (
         </div>
         <div className={introViewStyles.introNav}>
           <ul>
-              <li className={introStyles.invert_text}><Link to="./about">about</Link></li>
+            <PageLink to="/about" />
           </ul>
         </div>
       </div>
