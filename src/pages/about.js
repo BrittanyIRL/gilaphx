@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 // fullpage
 
 import FooterView from '../components/footer';
-import Navigation from '../components/navigation/navigation';
 import PageHeader from '../components/page-header';
 
 import mainStyles from '../components/about/about.module.css';
@@ -53,7 +52,6 @@ class AboutPage extends Component {
         <meta name="og:site_name" content="About Gila" />
         <html lang="en" />
       </Helmet>
-      <Navigation />
             <div className={mainStyles.sectionWrapper}>
               <PageHeader header="What is Gila?" />
               <div className={mainStyles.bodyText}>
@@ -74,7 +72,7 @@ class AboutPage extends Component {
                   Like Siddhartha, we have found our river. Now it's time to be the ferryman.
                 </p>
               </div>
-              <span className={mainStyles.invert_text} onClick={this.hereRedirect} >Join us!</span>
+              <span className={mainStyles.invert_text}><Link to="/">Home</Link></span>
             </div>
 
             <FooterView year={this.state.year} />

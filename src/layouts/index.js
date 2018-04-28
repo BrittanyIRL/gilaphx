@@ -10,10 +10,25 @@ class Template extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      year : new Date().getFullYear()
+      year : new Date().getFullYear(),
+      showNavigation : false
     };
+    this.navigationClosedHandler = this.navigationClosedHandler.bind(this);
+    this.navigationToggleHandler = this.navigationToggleHandler.bind(this);
 
   };
+
+  navigationClosedHandler(){
+    console.log("CLOSING NAV ");
+    this.setState( { showNavigation: false } );
+  }
+
+  navigationToggleHandler(){
+    console.log('CLICK SEEN! ', this);
+      this.setState( ( prevState ) => {
+          return { showNavigation: !prevState.showNavigation };
+      } );
+  }
 
 
   render() {
@@ -24,9 +39,13 @@ class Template extends React.Component {
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
       rootPath = __PATH_PREFIX__ + `/`
     }
-    // <Navigation />
     return (
       <Container>
+        <Navigation
+          open={this.state.showNavigation}
+          closed={this.navigationClosedHandler}
+          navigationToggleClicked={this.navigationToggleHandler}
+        />
         {children()}
       </Container>
     )
