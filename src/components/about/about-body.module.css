@@ -1,0 +1,9 @@
+.bodyText {
+  width: 100%;
+  margin: 0;
+}
+.bodyText p {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 1em;
+}

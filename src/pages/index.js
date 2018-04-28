@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import Head from '../components/hoc/Head/Head';
+
 // fullpage
-import {SectionsContainer, Section, Footer} from 'react-fullpage';
+import {SectionsContainer, Section} from 'react-fullpage';
 // page views
 import LandingView from '../components/landing/landing-view';
 import IntroView from '../components/landing/intro-view';
-import FooterView from '../components/footer';
 
 let fullpage_options = {
   arrowNavigation : true,
@@ -24,7 +24,6 @@ class RootIndex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      year : new Date().getFullYear()
     };
   };
 
@@ -39,14 +38,8 @@ class RootIndex extends React.Component {
   render() {
     return (
       <div>
-      <Helmet defaultTitle={`Gila PHX`}>
-        <meta name="og:type" content="website" />
-        <meta name="og:site_name" content="Gila PHX" />
-        <html lang="en" />
-      </Helmet>
-        <Footer>
-          <FooterView year={this.state.year} />
-        </Footer>
+        <Head title="Gila PHX" />
+
         <SectionsContainer {...fullpage_options}>
           <Section><LandingView onClick={this.hereRedirect} /></Section>
           <Section>

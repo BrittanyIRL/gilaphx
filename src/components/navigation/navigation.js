@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import styles from './navigation.module.css';
-import Backdrop from '../UI/Backdrop/Backdrop';
 
 export default (props) => {
   let attachedClasses = [styles.navigation, styles.Close];

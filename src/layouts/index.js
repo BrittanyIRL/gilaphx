@@ -4,6 +4,7 @@ import base from './base.css'
 import Container from '../components/container';
 import Navigation from '../components/navigation/navigation';
 import Loading from '../components/loading-view';
+import FooterView from '../components/footer';
 
 
 class Template extends React.Component {
@@ -19,12 +20,10 @@ class Template extends React.Component {
   };
 
   navigationClosedHandler(){
-    console.log("CLOSING NAV ");
     this.setState( { showNavigation: false } );
   }
 
   navigationToggleHandler(){
-    console.log('CLICK SEEN! ', this);
       this.setState( ( prevState ) => {
           return { showNavigation: !prevState.showNavigation };
       } );
@@ -32,21 +31,33 @@ class Template extends React.Component {
 
 
   render() {
-    const { location, children, history } = this.props
+    const { location, children, history } = this.props;
+    console.log(this.props);
     let header;
 
     let rootPath = `/`
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
       rootPath = __PATH_PREFIX__ + `/`
     }
-    return (
-      <Container>
+    /** Hide navigation on home ("/") **/
+    let navigation = null;
+    if(this.props.location.pathname == "/"){
+      navigation = null;
+    } else {
+      navigation = (
         <Navigation
           open={this.state.showNavigation}
           closed={this.navigationClosedHandler}
           navigationToggleClicked={this.navigationToggleHandler}
         />
+      );
+    }
+
+    return (
+      <Container>
+        {navigation}
         {children()}
+        <FooterView year={this.state.year} />
       </Container>
     )
   }
