@@ -12,3 +12,24 @@
   max-height: 100vh;
   list-style: none;
 }
+
+.invertText {
+  margin: 0;
+  font-size: inherit;
+  padding: .1em .25em;
+  color: white;
+  background-color: rgba(33, 33, 33, 0.9);
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+}
+
+.invertText a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.invertText:hover {
+  cursor: pointer;
+  background-color: rgba(133, 132, 132, 0.9);
+}

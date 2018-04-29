@@ -1,10 +1,44 @@
-.hero {
-  display: flex;
-  justify-content: center;
+.leadBackgroundImage {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display : flex;
   align-items: center;
+  justify-content: space;
+}
 
-  height: 12.5em;
-  background: #e1e1e1;
-  margin: -1em -2.5em 1em;
-  font-size: 2em
+.storyHeadline {
+  margin : auto;
+  background-color: black;
+  color : white;
+  padding: .25rem;
+}
+
+.introContainer {
+  width: 100%;
+  height: 50vh;
+  padding-top: 20vh;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  color : white;
+  background-color : black;
+}
+.introContainer > div  {
+  margin-top: 1rem;
+}
+
+.introContainer > div > p {
+  padding: 0;
+  margin: 0;
+}
+
+.introContainer author {
+  font-style: italic;
+}
+
+.storyContent {
+  margin: 2rem 0;
 }
