@@ -27,7 +27,7 @@ export default () => (
         <div className={ [introViewStyles.introNav, introViewStyles.large].join(' ') }>
           <ul>
             <li>
-              <PageLink to="/about" />
+              <PageLink to="/about" text="about"/>
             </li>
           </ul>
         </div>

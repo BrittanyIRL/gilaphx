@@ -1,30 +1,28 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import styles from './stories.module.css'
-import ArticlePreview from '../components/article-preview'
+import React from 'react';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
+import Head from '../components/hoc/Head/Head';
+
+import StoryPreview from '../components/stories/story-preview';
+
+import defaultStyles from '../components/default.module.css';
+
 
 class StoryIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
-        <div className="wrapper">
-          <div className={styles.hero}>Blog</div>
-          <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
-            {posts.map(({ node }) => {
+      <div>
+        <Head title="Gila Stories" />
+          <div className={defaultStyles.fullPageWrapper}>
+            {posts.map(({ node }, index ) => {
+              let is_even = index % 2 === 0;
               return (
-                <li key={node.slug}>
-                  <ArticlePreview article={node} />
-                </li>
+                <StoryPreview key={index} article={node} even={is_even}/>
               )
             })}
-          </ul>
         </div>
       </div>
     )

@@ -1,0 +1,129 @@
+/* fills fullPageWrapper - pretends to be fullpage js without the glitchy scroll*/
+.previewContainer {
+  width: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  background-color: black;
+  overflow-x:hidden;
+
+}
+
+/** control alternating view **/
+.even .previewImage {
+  order: 2;
+}
+.even .previewContent {
+  order:1;
+  margin-left: 2rem;
+}
+
+.previewImage {
+  width: 50%;
+  height: 100%;
+}
+.previewImage img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.previewContent {
+  width: 40%;
+  min-height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: .5rem 2rem;
+}
+
+.previewContent > p {
+  max-width: 80%;
+}
+.small {
+  margin-top: 1em;
+  font-size: .6rem;
+}
+.small > author {
+  font-style: italic;
+}
+
+.previewContent a {
+  background-color: white;
+  color: black;
+  padding: .25em;
+  max-width: 175px;
+  min-width: 100px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  align-self: flex-start;
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+}
+
+.previewContent a:active {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.previewContent a:hover {
+  cursor: pointer;
+  background-color: rgba(229, 229, 229, 0.6);
+}
+
+@media (max-width: 900px){
+  /** Media Query Handling ***/
+  .previewImage {
+    min-width: 30%;
+    max-width: 30%;
+    width: 30%;
+  }
+  .previewContent {
+    min-width: 60%;
+    max-width: 60%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px){
+  /** Media Query Handling ***/
+  .previewContainer {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .previewImage {
+    min-height: 40vh;
+    height: 40vh;
+    max-width: 100%;
+    width: 100%;
+
+  }
+  .previewContent {
+    height: 60vh;
+    min-height: 60vh;
+    max-width: 90%;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .previewContent p {
+    max-width: 100%;
+  }
+
+  /** prevent reordering on stacked view **/
+  .even .previewImage {
+    order: 1;
+  }
+  .even .previewContent {
+    order:2;
+  }
+}
