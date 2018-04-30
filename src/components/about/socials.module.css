@@ -27,12 +27,14 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-left: 0;
   padding-left: 0;
+  max-width: 80%;
 }
 .socialsContainer li {
   list-style-type: none;
-  margin: auto 2rem auto 0;
+  margin: 1rem 2rem auto 0;
 }
 
 .socialsContainer p {
