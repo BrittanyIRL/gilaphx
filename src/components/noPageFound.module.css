@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  height: 100%;
+  background-image: url("https://media1.giphy.com/media/dQpmoWZI8isRa/giphy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container h1 {
+  margin: auto;
+  font-size: 1.6rem;
+}

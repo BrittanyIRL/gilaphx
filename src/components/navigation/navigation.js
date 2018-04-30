@@ -3,6 +3,12 @@ import Link from 'gatsby-link';
 
 import styles from './navigation.module.css';
 
+/**
+<li className={styles.navigationItem}>
+  <Link to="/events" activeStyle={{ color: '#E5E5E5' }}>Events</Link>
+</li> 
+
+**/
 export default (props) => {
   let attachedClasses = [styles.navigation, styles.Close];
   if (props.open) {
@@ -25,9 +31,6 @@ export default (props) => {
           </li>
           <li className={styles.navigationItem}>
             <Link to="/stories" activeStyle={{ color: '#E5E5E5' }}>Stories</Link>
-          </li>
-          <li className={styles.navigationItem}>
-            <Link to="/events" activeStyle={{ color: '#E5E5E5' }}>Events</Link>
           </li>
         </ul>
       </nav>

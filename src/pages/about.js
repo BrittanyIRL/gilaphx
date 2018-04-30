@@ -3,22 +3,10 @@ import Link from 'gatsby-link';
 
 import Head from '../components/hoc/Head/Head';
 
-// fullpage
-
 import PageHeader from '../components/page-header';
 import AboutBody from '../components/about/about-body';
+import Socials from '../components/about/socials';
 import defaultStyles from '../components/default.module.css';
-
-let fullpage_options = {
-   arrowNavigation : true,
-   delay : 500,
-   scrollingSpeed : 400,
-   sectionClassName : 'section',
-   scrollBar : true,
-   navigation : true,
-   verticalAlign : false,
-   recordHistory : false
-};
 
 class AboutPage extends Component {
   constructor(props) {
@@ -28,10 +16,21 @@ class AboutPage extends Component {
   };
 
 
-  twitterWindow() {
-    // add in a "leaving site" screen before redirecting location
+  twitterClick() {
     if (typeof window !== 'undefined') {
-      window.location = 'https://mailchi.mp/61694d9ee225/gila-letter';
+      window.location = 'https://twitter.com/gilaphx';
+    }
+  };
+
+  instagramClick() {
+    if (typeof window !== 'undefined') {
+      window.location = 'https://www.instagram.com/gila_phx/';
+    }
+  };
+
+  facebookClick() {
+    if (typeof window !== 'undefined') {
+      window.location = 'https://www.facebook.com/GilaPHX/';
     }
   };
 
@@ -43,6 +42,7 @@ class AboutPage extends Component {
       <div className={defaultStyles.sectionWrapper}>
         <PageHeader header="What is Gila?" />
         <AboutBody />
+        <Socials onTwitter={this.twitterClick} onInstagram={this.instagramClick} onFacebook={this.facebookClick} email="gilaphx@gmail.com"/>
       </div>
 
       </div>

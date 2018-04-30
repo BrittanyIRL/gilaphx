@@ -12,7 +12,7 @@ class StoryIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-
+    console.log("posts: ", posts);
     return (
       <div>
         <Head title="Gila Stories" />
@@ -37,15 +37,17 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          subtitle
           slug
+          authors
           publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          heroImage {
+          previewImage {
             file {
               url
             }
+            title
           }
-          description {
+          abstract {
             childMarkdownRemark {
               html
             }

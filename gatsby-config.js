@@ -17,6 +17,15 @@ module.exports = {
         contentfulConfig.production
     },
     {
+     resolve: `gatsby-plugin-google-fonts`,
+     options: {
+       fonts: [
+         `Inconsolata`,
+         `Work Sans\:400,600` 
+       ]
+     }
+   },
+   {
     resolve: `gatsby-plugin-favicon`,
     options: {
       logo: "./src/favicon.png",
