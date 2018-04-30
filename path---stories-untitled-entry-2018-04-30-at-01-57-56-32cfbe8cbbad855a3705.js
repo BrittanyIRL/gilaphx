@@ -1,0 +1,2 @@
+webpackJsonp([0x730220850c92],{369:function(l,t){l.exports={data:{contentfulBlogPost:{title:null,subtitle:null,publishDate:null,authors:null,photographer:null,leadImage:null,body:null}},pathContext:{slug:"untitled-entry-2018-04-30-at-01-57-56"}}}});
+//# sourceMappingURL=path---stories-untitled-entry-2018-04-30-at-01-57-56-32cfbe8cbbad855a3705.js.map
