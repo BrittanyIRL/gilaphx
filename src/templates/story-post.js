@@ -11,12 +11,12 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost');
     const siteTitle = get(this.props, 'data.site.siteMetadata.title') || "Gila PHX";
-    console.log("post: ", post);
+    const description = post.description.childMarkdownRemark.html;
     const photographer = post.photographer ? <p>Photos : <span>{post.photographer}</span></p> : null;
     const illustrator = post.illustrator ? <p>Illustrations : <span>{post.illustrator}</span></p> : null;
     return (
       <div>
-        <Head title={`${post.title} | ${siteTitle}`} />
+        <Head title={post.title} author={post.authors} description={description} keywords={post.tags} />
         <div className={defaultStyles.fullPageWrapper}>
           <div className={styles.leadBackgroundImage} style={{ backgroundImage : `url(${post.leadImage.file.url})`}}>
             <h1 className={styles.storyHeadline}>{post.title}</h1>
@@ -47,7 +47,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -57,6 +57,12 @@ export const pageQuery = graphql`
       publishDate(formatString: "MMMM Do, YYYY")
       authors
       photographer
+      tags
+      description {
+        childMarkdownRemark {
+          html
+        }
+      }
       leadImage {
         file {
           url

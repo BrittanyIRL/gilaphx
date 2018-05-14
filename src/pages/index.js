@@ -20,6 +20,8 @@ let fullpage_options = {
  recordHistory : false
 };
 
+let homeDescription = "<p>Gila. Seen afar in a Baltimore dream. An eastern province bordering our fair city. A tributary cutting through its heart. A dragon roaming the desert sunset. A people whose culture outlives us all.</p> <p>Gila. Pronounced \ǵē-lə\. Like so much of our modernity, an intentional misplacement. Appropriation disguised as ignorance. A wrong as a reminder. To learn and unlearn.</p> <p>Gila. Nomads preserving the culture of the native tongue. Art activism through radical collectivism. Bridges built in and out of knowledge. Eternal joy. </p>";
+
 class RootIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +40,7 @@ class RootIndex extends React.Component {
   render() {
     return (
       <div>
-        <Head title="Gila PHX" />
+        <Head title="Gila PHX" description={homeDescription} />
 
         <SectionsContainer {...fullpage_options}>
           <Section><LandingView onClick={this.hereRedirect} /></Section>

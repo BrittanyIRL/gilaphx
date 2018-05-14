@@ -12,10 +12,9 @@ class StoryIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    console.log("posts: ", posts);
     return (
       <div>
-        <Head title="Gila Stories" />
+      <Head title="Gila Stories" description="Stories from Gila" />
           <div className={defaultStyles.fullPageWrapper}>
             {posts.map(({ node }, index ) => {
               let is_even = index % 2 === 0;

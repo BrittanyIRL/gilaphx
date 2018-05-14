@@ -8,6 +8,8 @@ import AboutBody from '../components/about/about-body';
 import Socials from '../components/about/socials';
 import defaultStyles from '../components/default.module.css';
 
+
+let aboutDescription = "Gila is a collaborative effort to centralize and amplify the arts and music of Phoenix. With its diverse culture and crucial geographical importance in our country's immigration conversation, our city is a vital and necessary contribution to the national artistic voice. We want to facilitate this in radical ways. We want Phoenix to be louder.";
 class AboutPage extends Component {
   constructor(props) {
     super(props);
@@ -37,8 +39,7 @@ class AboutPage extends Component {
   render() {
     return (
       <div>
-      <Head title="About Gila" />
-
+      <Head title="Gila PHX" description={aboutDescription} />
       <div className={defaultStyles.sectionWrapper}>
         <PageHeader header="What is Gila?" />
         <AboutBody />
