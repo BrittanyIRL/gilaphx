@@ -19,7 +19,7 @@ export default (props) => {
       <meta name="og:site_name" content="GilaPHX" />
       <meta property="og:description" content={props.description} />
       <meta property="og:image" content="./gila_small.png" />
-
+      <meta property="twitter:image" content="./gila_small.png" />
       <meta name="twitter:title" content={titleContent} />
     </Helmet>
   )
