@@ -15,8 +15,8 @@ class BlogPostTemplate extends React.Component {
     description = description.replace(/<[^>]+>/g, '');
     description = decodeURIComponent(description);
 
-    const photographer = post.photographer ? <p>Photos : <span>{post.photographer}</span></p> : null;
-    const illustrator = post.illustrator ? <p>Illustrations : <span>{post.illustrator}</span></p> : null;
+    const photographer = post.photographer ? <p>Photo by <span>{post.photographer}</span></p> : null;
+    const illustrator = post.illustrator ? <p>Illustration by <span>{post.illustrator}</span></p> : null;
     return (
       <div>
         <Head title={post.title} author={post.authors} description={description} keywords={post.tags} />
@@ -27,8 +27,8 @@ class BlogPostTemplate extends React.Component {
           <div className={styles.introContainer}>
             <h2>{post.subtitle}</h2>
             <div>
-              <p>Published : <date>{post.publishDate}</date></p>
-              <p>Author : <author>{post.authors}</author></p>
+              <p>Published on <date>{post.publishDate}</date></p>
+              <p>Written by <author>{post.authors}</author></p>
               {photographer}
               {illustrator}
             </div>
