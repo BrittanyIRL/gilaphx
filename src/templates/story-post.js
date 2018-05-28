@@ -11,7 +11,10 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost');
     const siteTitle = get(this.props, 'data.site.siteMetadata.title') || "Gila PHX";
-    const description = post.description.childMarkdownRemark.html;
+    let description = post.description.childMarkdownRemark.html;
+    description = description.replace(/<[^>]+>/g, '');
+    description = decodeURIComponent(description);
+
     const photographer = post.photographer ? <p>Photos : <span>{post.photographer}</span></p> : null;
     const illustrator = post.illustrator ? <p>Illustrations : <span>{post.illustrator}</span></p> : null;
     return (
