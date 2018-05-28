@@ -6,11 +6,19 @@ import styles from './navigation.module.css';
 /**
 <li className={styles.navigationItem}>
   <Link to="/events" activeStyle={{ color: '#E5E5E5' }}>Events</Link>
-</li> 
+</li>
 
 **/
+const hereRedirect = () => {
+  // add in a "leaving site" screen before redirecting location
+  if (typeof window !== 'undefined') {
+    window.location = 'https://mailchi.mp/61694d9ee225/gila-letter';
+  }
+};
+
 export default (props) => {
   let attachedClasses = [styles.navigation, styles.Close];
+
   if (props.open) {
       attachedClasses = [styles.navigation, styles.Open];
   }
@@ -31,6 +39,9 @@ export default (props) => {
           </li>
           <li className={styles.navigationItem}>
             <Link to="/stories" activeStyle={{ color: '#E5E5E5' }}>Stories</Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <a title="Sign up for our newsletter" onClick={hereRedirect}>Signup</a>
           </li>
         </ul>
       </nav>

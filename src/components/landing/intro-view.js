@@ -9,7 +9,12 @@ import defaultStyles from './../default.module.css';
 
 // <li className={introStyles.invert_text}><Link to="/events">events</Link></li>
 // <li className={introStyles.invert_text}><Link to="/stories">stories</Link></li>
-
+const hereRedirect = () => {
+  // add in a "leaving site" screen before redirecting location
+  if (typeof window !== 'undefined') {
+    window.location = 'https://mailchi.mp/61694d9ee225/gila-letter';
+  }
+};
 export default () => (
   <div className={introStyles.section}>
     <Media query="(min-width: 1001px)">
@@ -33,6 +38,11 @@ export default () => (
             <li>
               <span className={defaultStyles.invertText}>
                 <Link to="/about">About</Link>
+              </span>
+            </li>
+            <li>
+              <span className={defaultStyles.invertText}>
+                <a title="Sign up for our newsletter" onClick={hereRedirect}>Signup</a>
               </span>
             </li>
           </ul>
@@ -60,6 +70,11 @@ export default () => (
             <li>
               <span className={defaultStyles.invertText}>
                 <Link to="/about">About</Link>
+              </span>
+            </li>
+            <li>
+              <span className={defaultStyles.invertText}>
+                <a title="Sign up for our newsletter" onClick={hereRedirect}>Signup</a>
               </span>
             </li>
           </ul>

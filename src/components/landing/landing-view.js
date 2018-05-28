@@ -11,7 +11,7 @@ export default (props) => (
     <Media query="(min-width: 501px)">
       <div className={[landingStyles.landing, landingStyles.large].join(' ')}>
         <h1>Be
-          <span className={ [introStyles.invert_text, landingStyles.invert_text].join(' ') } onClick={props.onClick}>
+          <span className={ [introStyles.invert_text, landingStyles.invert_text].join(' ') } onClick={props.onClick} title="Sign up for our newsletter">
             here.
           </span>
         </h1>
