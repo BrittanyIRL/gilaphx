@@ -32,7 +32,6 @@ class Template extends React.Component {
 
   render() {
     const { location, children, history } = this.props;
-    console.log(this.props);
     let header;
 
     let rootPath = `/`
