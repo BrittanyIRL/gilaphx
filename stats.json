@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---stories-gated-communities": [
+      "path---stories-gated-communities-94fdcc9289cc6a2dd201.js",
+      "path---stories-gated-communities-94fdcc9289cc6a2dd201.js.map"
+    ],
     "component---src-pages-stories-js": [
       "component---src-pages-stories-js-2566a1d9a561e70955a8.js",
       "component---src-pages-stories-js-2566a1d9a561e70955a8.js.map"
@@ -19,6 +23,10 @@
     "path---stories-claire-what-are-you-thinking": [
       "path---stories-claire-what-are-you-thinking-2dd42ceee876a93e9b03.js",
       "path---stories-claire-what-are-you-thinking-2dd42ceee876a93e9b03.js.map"
+    ],
+    "path---stories-all-the-pigs-all-lined-up": [
+      "path---stories-all-the-pigs-all-lined-up-0285b478ad8a3af1a3be.js",
+      "path---stories-all-the-pigs-all-lined-up-0285b478ad8a3af1a3be.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-9865c714f550e38f07e5.js",
@@ -43,18 +51,18 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---stories": [
-      "path---stories-1a51b827dba1e95348af.js",
-      "path---stories-1a51b827dba1e95348af.js.map"
+      "path---stories-580d39c2a23897702021.js",
+      "path---stories-580d39c2a23897702021.js.map"
     ],
     "app": [
-      "app-9ccd09a8ee2b87646723.js",
+      "app-70b33341abebbc95ef81.js",
       "build-js-styles.css",
-      "app-9ccd09a8ee2b87646723.js.map",
+      "app-70b33341abebbc95ef81.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-story-post-js": [
-      "component---src-templates-story-post-js-fd4b8605c837bd062e77.js",
-      "component---src-templates-story-post-js-fd4b8605c837bd062e77.js.map"
+      "component---src-templates-story-post-js-911c6c2640903bbdb725.js",
+      "component---src-templates-story-post-js-911c6c2640903bbdb725.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
