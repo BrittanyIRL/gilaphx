@@ -36,6 +36,10 @@
       "component---src-layouts-index-js-9865c714f550e38f07e5.js",
       "component---src-layouts-index-js-9865c714f550e38f07e5.js.map"
     ],
+    "path---stories-dovi-and-the-art-of-finding-desirable-bliss": [
+      "path---stories-dovi-and-the-art-of-finding-desirable-bliss-d4b4a25c04f17015f21b.js",
+      "path---stories-dovi-and-the-art-of-finding-desirable-bliss-d4b4a25c04f17015f21b.js.map"
+    ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
@@ -66,22 +70,26 @@
       "path---stories-say-yes-to-everything-1a848edc876be9099a7b.js",
       "path---stories-say-yes-to-everything-1a848edc876be9099a7b.js.map"
     ],
+    "path---stories-microwave-era-with-lil-qwerty": [
+      "path---stories-microwave-era-with-lil-qwerty-a8154a73d67c6f6b0c73.js",
+      "path---stories-microwave-era-with-lil-qwerty-a8154a73d67c6f6b0c73.js.map"
+    ],
     "path---stories-psychic-environments": [
       "path---stories-psychic-environments-2c4672da211dd27967a4.js",
       "path---stories-psychic-environments-2c4672da211dd27967a4.js.map"
     ],
     "path---stories": [
-      "path---stories-75c9652eda782bfe597a.js",
-      "path---stories-75c9652eda782bfe597a.js.map"
+      "path---stories-50a183449a373f810dc7.js",
+      "path---stories-50a183449a373f810dc7.js.map"
     ],
     "path---stories-believe-in-futures": [
       "path---stories-believe-in-futures-5bec548c89fab27479c3.js",
       "path---stories-believe-in-futures-5bec548c89fab27479c3.js.map"
     ],
     "app": [
-      "app-1cb6264866f3cc398142.js",
+      "app-3f3f38076c531195bf23.js",
       "build-js-styles.css",
-      "app-1cb6264866f3cc398142.js.map",
+      "app-3f3f38076c531195bf23.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-story-post-js": [
